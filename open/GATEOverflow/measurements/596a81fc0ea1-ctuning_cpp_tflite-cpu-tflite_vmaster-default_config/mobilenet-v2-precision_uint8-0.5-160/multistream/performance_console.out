@@ -1,0 +1,22 @@
+Graph file: /home/arjun/MLC/repos/local/cache/get-ml-model-mobilenet_c99e715b/v2_160_50/model.tflite
+Image dir: /home/arjun/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ce2b252a
+Image list: /home/arjun/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ce2b252a/preprocessed_files.txt
+Image size: 160
+Image channels: 3
+Prediction classes: 1000
+Result dir: /home/arjun/MLC/repos/local/cache/get-mlperf-inference-results-dir_d5af2b93/valid_results/intel_spr_i9-tflite_cpp-cpu-tflite-vmaster-default_config/mobilenet-v2-precision_uint8-0.5-160/singlestream/performance/run_1
+How many images fit in memory buffer: 1024
+Normalize: 1
+Subtract mean: 0
+Run time preprocessing: 1
+Number of Threads: 16
+Number of available imagefiles: 50000
+
+Loading graph...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Input tensor dimensions (NHWC): 1*160*160*3
+Output tensor dimensions: 1*1001
+Path to user.conf : /home/arjun/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/74225fc9525140528a21a11536037736.conf
+Model Name: mobilenet
+LoadGen Scenario: SingleStream
+LoadGen Mode: performance

@@ -1,0 +1,12 @@
+{
+    "input_data_types": "int32",
+    "retraining": "No",
+    "starting_weights_filename": "Huggingface model weights hosted by MLCommons",
+    "weight_data_types": {
+        "clip1": "fp16",
+        "clip2": "fp16",
+        "unet": "fp8",
+        "vae": "int8"
+    },
+    "weight_transformations": "quantization, affine fusion"
+}

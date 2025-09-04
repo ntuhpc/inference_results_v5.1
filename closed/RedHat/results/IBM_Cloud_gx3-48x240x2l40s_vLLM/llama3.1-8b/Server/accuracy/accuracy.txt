@@ -1,0 +1,14 @@
+[nltk_data] Downloading package punkt to /home/vpcuser/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     /home/vpcuser/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+INFO:Llama-8B-Dataset:Loading dataset...
+INFO:Llama-8B-Dataset:Finished loading dataset.
+INFO:absl:Using default tokenizer.
+
+Results
+
+{'rouge1': '38.7564', 'rouge2': '15.7913', 'rougeL': '24.4559', 'rougeLsum': '35.7753', 'gen_len': 8109406, 'gen_num': 13368}
+
+hash=850d89940d5aa1e5290fac57d3970cca04cc156498db2c3e23388e250d52034e

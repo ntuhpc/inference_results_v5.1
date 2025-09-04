@@ -1,0 +1,238 @@
+[2025-08-01 23:38:17,151 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,152 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,153 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,155 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,155 submission_checker.py:1697 INFO] Target latency: None, Latency: 2975008269616, Scenario: Offline
+[2025-08-01 23:38:17,157 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,158 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,159 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,161 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,161 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,179 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,197 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,198 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,198 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,199 submission_checker.py:1697 INFO] Target latency: None, Latency: 667137377815, Scenario: Offline
+[2025-08-01 23:38:17,199 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,199 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,199 submission_checker.py:1697 INFO] Target latency: None, Latency: 665292030731, Scenario: Offline
+[2025-08-01 23:38:17,214 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,230 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,231 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,231 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,232 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 23:38:17,232 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,232 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,232 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 23:38:17,249 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,264 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,274 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,284 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,285 submission_checker.py:1697 INFO] Target latency: None, Latency: 810490259795, Scenario: Offline
+[2025-08-01 23:38:17,295 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,304 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,305 submission_checker.py:1697 INFO] Target latency: None, Latency: 814557558806, Scenario: Offline
+[2025-08-01 23:38:17,320 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,334 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,344 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,353 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,354 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,364 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,373 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,374 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,389 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,403 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,413 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,422 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,423 submission_checker.py:1697 INFO] Target latency: None, Latency: 1019989463461, Scenario: Offline
+[2025-08-01 23:38:17,432 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,442 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,443 submission_checker.py:1697 INFO] Target latency: None, Latency: 1021531183038, Scenario: Offline
+[2025-08-01 23:38:17,443 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline/TEST01 failed
+[2025-08-01 23:38:17,458 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,472 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,482 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,491 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,492 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,502 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,512 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,512 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,513 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/ASUSTeK/compliance/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server/TEST01 failed
+[2025-08-01 23:38:17,515 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,516 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,517 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,518 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,519 submission_checker.py:1697 INFO] Target latency: None, Latency: 2969744829470, Scenario: Offline
+[2025-08-01 23:38:17,520 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,521 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,523 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,524 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,524 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,536 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,537 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,538 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,539 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,539 submission_checker.py:1697 INFO] Target latency: None, Latency: 2692944035653, Scenario: Offline
+[2025-08-01 23:38:17,551 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,551 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,552 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,553 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,554 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,555 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,556 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,557 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,559 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,559 submission_checker.py:1697 INFO] Target latency: None, Latency: 2620545959737, Scenario: Offline
+[2025-08-01 23:38:17,560 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,561 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,563 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,564 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,564 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,579 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,594 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,595 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,595 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,596 submission_checker.py:1697 INFO] Target latency: None, Latency: 653329625134, Scenario: Offline
+[2025-08-01 23:38:17,596 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,596 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,596 submission_checker.py:1697 INFO] Target latency: None, Latency: 656001492023, Scenario: Offline
+[2025-08-01 23:38:17,610 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,625 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,626 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,627 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,627 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 23:38:17,627 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,627 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,627 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 23:38:17,641 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,656 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,666 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,675 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,676 submission_checker.py:1697 INFO] Target latency: None, Latency: 731579804035, Scenario: Offline
+[2025-08-01 23:38:17,685 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,694 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,695 submission_checker.py:1697 INFO] Target latency: None, Latency: 729829325490, Scenario: Offline
+[2025-08-01 23:38:17,716 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,734 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,745 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,753 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,754 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,763 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,771 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,772 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,786 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,800 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,809 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,818 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,819 submission_checker.py:1697 INFO] Target latency: None, Latency: 687028195350, Scenario: Offline
+[2025-08-01 23:38:17,827 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,835 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,836 submission_checker.py:1697 INFO] Target latency: None, Latency: 683402209254, Scenario: Offline
+[2025-08-01 23:38:17,837 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline/TEST01 failed
+[2025-08-01 23:38:17,850 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,864 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,873 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,882 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,883 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,892 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,900 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,901 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 23:38:17,902 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/ASUSTeK/compliance/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server/TEST01 failed
+[2025-08-01 23:38:17,903 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,904 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,906 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,907 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,907 submission_checker.py:1697 INFO] Target latency: None, Latency: 2607292647975, Scenario: Offline
+[2025-08-01 23:38:17,908 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,909 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,911 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,912 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,912 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,914 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,914 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,915 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,916 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,916 submission_checker.py:1697 INFO] Target latency: None, Latency: 1328325630809, Scenario: Offline
+[2025-08-01 23:38:17,917 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,918 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,919 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,920 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,920 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,922 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,923 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,924 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,926 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,926 submission_checker.py:1697 INFO] Target latency: None, Latency: 2830588702939, Scenario: Offline
+[2025-08-01 23:38:17,927 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,928 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,930 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,931 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,931 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,933 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,934 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,935 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,937 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,937 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,938 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,939 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,941 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,942 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,942 submission_checker.py:1697 INFO] Target latency: None, Latency: 2830588702939, Scenario: Offline
+[2025-08-01 23:38:17,944 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,945 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,946 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,948 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,948 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,949 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,950 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,952 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,953 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 23:38:17,953 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 23:38:17,954 submission_checker.py:3387 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Offline 348225.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99.9/Server 330555.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Offline 580460.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/dlrm-v2-99/Server 450100.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Offline 30490.8
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99.9/Server 24554.7
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Offline 30487.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/llama2-70b-99/Server 25614.7
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Offline 13319.5
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC8000_H200_NVLx8_TRT/retinanet/Server 12801.9
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Interactive 15566.2
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Offline 33987.4
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99.9/Server 31241.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Interactive 15566.2
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Offline 33987.4
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/llama2-70b-99/Server 31241.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Offline 68121.2
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/mixtral-8x7b/Server 55800.3
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Offline 388058.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99.9/Server 370066.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Offline 643122.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/dlrm-v2-99/Server 591162.0
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline 34887.2
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server 29026.9
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline 35075.1
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/llama2-70b-99/Server 34193.8
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Offline 61372.4
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/mixtral-8x7b/Server 59992.8
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Offline 14451.7
+[2025-08-01 23:38:17,954 submission_checker.py:3391 INFO] Results closed/ASUSTeK/results/ESC_N8_H200-SXM-141GBx8_TRT/retinanet/Server 14406.0
+[2025-08-01 23:38:17,954 submission_checker.py:3393 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3482 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3483 INFO] Results=30, NoResults=0, Power Results=0
+[2025-08-01 23:38:17,954 submission_checker.py:3490 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3491 INFO] Closed Results=30, Closed Power Results=0
+
+[2025-08-01 23:38:17,954 submission_checker.py:3496 INFO] Open Results=0, Open Power Results=0
+
+[2025-08-01 23:38:17,954 submission_checker.py:3501 INFO] Network Results=0, Network Power Results=0
+
+[2025-08-01 23:38:17,954 submission_checker.py:3506 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3508 INFO] Systems=3, Power Systems=0
+[2025-08-01 23:38:17,954 submission_checker.py:3512 INFO] Closed Systems=3, Closed Power Systems=0
+[2025-08-01 23:38:17,954 submission_checker.py:3517 INFO] Open Systems=0, Open Power Systems=0
+[2025-08-01 23:38:17,954 submission_checker.py:3522 INFO] Network Systems=0, Network Power Systems=0
+[2025-08-01 23:38:17,954 submission_checker.py:3527 INFO] ---
+[2025-08-01 23:38:17,954 submission_checker.py:3532 INFO] SUMMARY: submission looks OK

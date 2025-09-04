@@ -1,0 +1,81 @@
+From 783f53cbd5c86c577f5f02f4439f8892b6ada072 Mon Sep 17 00:00:00 2001
+From: MLPerf <mlperf>
+Date: Wed, 1 Jan 2025 00:00:00 +0000
+Subject: [PATCH] Add-custom-prefill-scheduler-condition-for-moe
+
+---
+ vllm/core/scheduler.py | 16 +++++++++++++++-
+ vllm/envs.py           | 16 ++++++++++++++++
+ 2 files changed, 31 insertions(+), 1 deletion(-)
+
+diff --git a/vllm/core/scheduler.py b/vllm/core/scheduler.py
+index 0ef039699..a2d70b7df 100644
+--- a/vllm/core/scheduler.py
++++ b/vllm/core/scheduler.py
+@@ -21,6 +21,7 @@ from vllm.sequence import (Sequence, SequenceData, SequenceGroup,
+                            SequenceGroupMetadataDelta, SequenceStage,
+                            SequenceStatus)
+ from vllm.utils import Device, PyObjectCache
++import vllm.envs as envs
+ 
+ logger = init_logger(__name__)
+ 
+@@ -1082,7 +1083,20 @@ class Scheduler:
+         waiting_queue = self.waiting
+ 
+         leftover_waiting_sequences: Deque[SequenceGroup] = deque()
+-        while self._passed_delay(time.time()) and waiting_queue:
++
++        # Custom condition for MLPerf to disable prefill
++        prefill_condition = True
++        if envs.VLLM_MOE_MLPERF_SCHED:
++            num_free_blocks = self.block_manager.get_num_free_gpu_blocks()
++            total_blocks = self.block_manager.num_total_gpu_blocks
++            pct_free_blocks = num_free_blocks / total_blocks
++            pct_tokens_filled = budget.num_batched_tokens / budget.token_budget
++            pct_seqs_filled = budget.num_curr_seqs / budget.max_num_seqs
++            prefill_condition = pct_free_blocks >= envs.VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_FREE_PCT \
++                            and pct_tokens_filled <= envs.VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_TOKENS_PCT \
++                            and pct_seqs_filled <= envs.VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_SEQS_PCT
++
++        while prefill_condition and self._passed_delay(time.time()) and waiting_queue:
+             seq_group = waiting_queue[0]
+ 
+             waiting_seqs = seq_group.get_seqs(status=SequenceStatus.WAITING)
+diff --git a/vllm/envs.py b/vllm/envs.py
+index 999370dd8..d9320b9d4 100644
+--- a/vllm/envs.py
++++ b/vllm/envs.py
+@@ -9,6 +9,10 @@ from typing import TYPE_CHECKING, Any, Callable, Optional
+ 
+ if TYPE_CHECKING:
+     VLLM_MOE_MLPERF_KERNEL: bool = False
++    VLLM_MOE_MLPERF_SCHED: bool = False
++    VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_FREE_PCT: float = 0.0
++    VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_TOKENS_PCT: float = 0.0
++    VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_SEQS_PCT: float = 0.0
+     VLLM_HOST_IP: str = ""
+     VLLM_PORT: Optional[int] = None
+     VLLM_RPC_BASE_PATH: str = tempfile.gettempdir()
+@@ -256,6 +260,18 @@ environment_variables: dict[str, Callable[[], Any]] = {
+     "VLLM_MOE_MLPERF_KERNEL":
+     lambda: bool(int(os.getenv("VLLM_MOE_MLPERF_KERNEL", "0"))),
+ 
++    "VLLM_MOE_MLPERF_SCHED":
++    lambda: bool(int(os.getenv("VLLM_MOE_MLPERF_SCHED", "0"))),
++
++    "VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_FREE_PCT":
++    lambda: float(os.getenv("VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_FREE_PCT", "0.03")),
++
++    "VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_TOKENS_PCT":
++    lambda: float(os.getenv("VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_TOKENS_PCT", "0.80")),
++
++    "VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_SEQS_PCT":
++    lambda: float(os.getenv("VLLM_MOE_MLPERF_SCHED_PREFILL_KVC_SEQS_PCT", "0.80")),
++
+     # used in distributed environment to determine the ip address
+     # of the current node, when the node has multiple network interfaces.
+     # If you are using multi-node inference, you should set this differently
+-- 
+2.43.0
+

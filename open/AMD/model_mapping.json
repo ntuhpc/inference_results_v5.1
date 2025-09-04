@@ -1,0 +1,4 @@
+{
+    "llama3_1-405b_pruned"         : "llama3.1-405b",
+    "llama3_1-405b_finetuned"      : "llama3.1-405b"
+}

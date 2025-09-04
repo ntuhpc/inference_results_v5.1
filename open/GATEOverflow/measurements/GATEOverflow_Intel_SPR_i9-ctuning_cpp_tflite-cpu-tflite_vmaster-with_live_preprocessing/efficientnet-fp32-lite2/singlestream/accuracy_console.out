@@ -1,0 +1,22 @@
+Graph file: /home/arjun/MLC/repos/local/cache/get-ml-model-efficientnet-lite_26e6db65/efficientnet-lite2/efficientnet-lite2-fp32.tflite
+Image dir: /home/arjun/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_9c25df89
+Image list: /home/arjun/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_9c25df89/preprocessed_files.txt
+Image size: 260
+Image channels: 3
+Prediction classes: 1000
+Result dir: /home/arjun/MLC/repos/local/cache/get-mlperf-inference-results-dir_d5af2b93/valid_results/intel_spr_i9-tflite_cpp-cpu-tflite-vmaster-with_live_preprocessing/efficientnet-fp32-lite2/singlestream/accuracy
+How many images fit in memory buffer: 1024
+Normalize: 1
+Subtract mean: 0
+Run time preprocessing: 1
+Number of Threads: 32
+Number of available imagefiles: 50000
+
+Loading graph...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Input tensor dimensions (NHWC): 1*260*260*3
+Output tensor dimensions: 1*1000
+Path to user.conf : /home/arjun/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/b3ffd2ad30974ddc9cf021c2cea45669.conf
+Model Name: efficientnet
+LoadGen Scenario: SingleStream
+LoadGen Mode: accuracy

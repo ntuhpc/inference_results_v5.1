@@ -1,0 +1,36 @@
+[2025-08-01 03:29:57,282 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,283 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,284 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,285 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,285 submission_checker.py:1697 INFO] Target latency: None, Latency: 876481733027, Scenario: Offline
+[2025-08-01 03:29:57,287 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,287 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,288 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,289 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,289 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 03:29:57,291 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,292 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,293 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,294 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 03:29:57,294 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 03:29:57,295 submission_checker.py:3387 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3391 INFO] Results closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Interactive 32212.9
+[2025-08-01 03:29:57,295 submission_checker.py:3391 INFO] Results closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Offline 48147.3
+[2025-08-01 03:29:57,295 submission_checker.py:3391 INFO] Results closed/Dell/results/XE7745_H200_NVL_141GBx8_TRT/llama3.1-8b/Server 38680.2
+[2025-08-01 03:29:57,295 submission_checker.py:3393 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3482 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3483 INFO] Results=3, NoResults=0, Power Results=0
+[2025-08-01 03:29:57,295 submission_checker.py:3490 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3491 INFO] Closed Results=3, Closed Power Results=0
+
+[2025-08-01 03:29:57,295 submission_checker.py:3496 INFO] Open Results=0, Open Power Results=0
+
+[2025-08-01 03:29:57,295 submission_checker.py:3501 INFO] Network Results=0, Network Power Results=0
+
+[2025-08-01 03:29:57,295 submission_checker.py:3506 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3508 INFO] Systems=1, Power Systems=0
+[2025-08-01 03:29:57,295 submission_checker.py:3512 INFO] Closed Systems=1, Closed Power Systems=0
+[2025-08-01 03:29:57,295 submission_checker.py:3517 INFO] Open Systems=0, Open Power Systems=0
+[2025-08-01 03:29:57,295 submission_checker.py:3522 INFO] Network Systems=0, Network Power Systems=0
+[2025-08-01 03:29:57,295 submission_checker.py:3527 INFO] ---
+[2025-08-01 03:29:57,295 submission_checker.py:3532 INFO] SUMMARY: submission looks OK

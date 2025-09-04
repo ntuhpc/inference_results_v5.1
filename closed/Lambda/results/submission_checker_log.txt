@@ -1,0 +1,71 @@
+[2025-07-31 19:12:28,679 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,682 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,686 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,690 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,691 submission_checker.py:1697 INFO] Target latency: None, Latency: 2645353748820, Scenario: Offline
+[2025-07-31 19:12:28,697 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,700 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,704 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,708 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,708 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 19:12:28,715 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,717 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,720 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,723 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,723 submission_checker.py:1697 INFO] Target latency: None, Latency: 3286392224288, Scenario: Offline
+[2025-07-31 19:12:28,729 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,731 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,733 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,736 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,736 submission_checker.py:1678 INFO] Target latency: 60000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 19:12:28,743 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,745 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,747 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,750 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,750 submission_checker.py:1697 INFO] Target latency: None, Latency: 652199652467, Scenario: Offline
+[2025-07-31 19:12:28,752 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/compliance/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,754 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/compliance/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,754 submission_checker.py:1697 INFO] Target latency: None, Latency: 621802243797, Scenario: Offline
+[2025-07-31 19:12:28,761 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,763 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,766 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,769 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,769 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-07-31 19:12:28,771 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/compliance/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,773 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Lambda/compliance/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 19:12:28,773 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-07-31 19:12:28,777 submission_checker.py:3400 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline 102725.0
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server 99993.9
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline 1648.6
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server 1246.79
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline 32.5691
+[2025-07-31 19:12:28,777 submission_checker.py:3405 INFO] Results closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server 28.4629
+[2025-07-31 19:12:28,777 submission_checker.py:3407 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3496 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3497 INFO] Results=6, NoResults=0, Power Results=0
+[2025-07-31 19:12:28,777 submission_checker.py:3504 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3505 INFO] Closed Results=6, Closed Power Results=0
+
+[2025-07-31 19:12:28,777 submission_checker.py:3510 INFO] Open Results=0, Open Power Results=0
+
+[2025-07-31 19:12:28,777 submission_checker.py:3515 INFO] Network Results=0, Network Power Results=0
+
+[2025-07-31 19:12:28,777 submission_checker.py:3520 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3522 INFO] Systems=1, Power Systems=0
+[2025-07-31 19:12:28,777 submission_checker.py:3526 INFO] Closed Systems=1, Closed Power Systems=0
+[2025-07-31 19:12:28,777 submission_checker.py:3531 INFO] Open Systems=0, Open Power Systems=0
+[2025-07-31 19:12:28,777 submission_checker.py:3536 INFO] Network Systems=0, Network Power Systems=0
+[2025-07-31 19:12:28,777 submission_checker.py:3541 INFO] ---
+[2025-07-31 19:12:28,777 submission_checker.py:3546 INFO] SUMMARY: submission looks OK
+HEREEEE
+['TEST06']
+HEREEEE
+['TEST06']
+HEREEEE
+HEREEEE
+HEREEEE
+['TEST04']
+HEREEEE
+['TEST04']
+{'closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Offline': 102725.0, 'closed/Lambda/results/B200-SXM-180GBx8_TRT/llama2-70b-99/Server': 99993.9, 'closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Offline': 1648.6, 'closed/Lambda/results/B200-SXM-180GBx8_TRT/llama3.1-405b/Server': 1246.79, 'closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Offline': 32.5691, 'closed/Lambda/results/B200-SXM-180GBx8_TRT/stable-diffusion-xl/Server': 28.4629}

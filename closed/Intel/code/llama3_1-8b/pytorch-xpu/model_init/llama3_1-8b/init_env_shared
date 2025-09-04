@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# export WORKLOAD_NAME="gptj" # Using gptj scenario and dataset for now
+export MODEL_NAME="/model/Llama-3.1-8B-Instruct-autoround-w4g-1-iters512-xpu"
+
+export MODEL_NAME_FULL="/model/Llama-3.1-8B-Instruct"
+
+export DATASET_PATH="/data/cnn_eval.json"
+export CALIBRATION_PATH="/data/cnn_dailymail_calibration.json"
+export TOTAL_SAMPLE_COUNT=13368
+export OUTPUT_DIR=$PWD/log/llama
+export EVAL_SCRIPT=$EVALUATION_DIR/evaluate-accuracy-cnn.py
+
+source init_env_base
+export MAX_MODEL_LEN=3072
+export MAX_NUM_BATCHED_TOKENS=768
+export VLLM_XPU_ATTN_IMPL=chunk_page
+export VLLM_USE_SEPARATE_QUANT=1
+export VLLM_FUSE_NORM_QUANT=1
+
+export VLLM_FUSE_SILU_QUANT=1
+export VLLM_XPU_PA_IMPL=triton

@@ -1,0 +1,41 @@
+{
+    "server_vllm_args": {
+        "tensor_parallel_size": 1,
+        "max_model_len": 2048,
+        "enable_prefix_caching": false,
+        "disable_log_stats": false,
+        "dtype": "bfloat16",
+        "kv_cache_dtype": "fp8",
+        "quantization": "quark",
+        "gpu_memory_utilization": 0.92,
+        "swap_space": 0.0,
+        "block_size": 32,
+        "num_scheduler_steps": 9,
+        "max_seq_len_to_capture": 2048,
+        "max_num_batched_tokens": 40960,
+        "max_num_seqs": 3072,
+        "disable_custom_all_reduce": true,
+        "enable_chunked_prefill": false,
+        "skip_tokenizer_init": false
+    },
+    "offline_vllm_args": {
+        "tensor_parallel_size" : 1,
+        "max_model_len": 2048,
+        "enforce_eager": false,
+        "enable_prefix_caching": false,
+        "disable_log_stats": false,
+        "dtype": "bfloat16",
+        "kv_cache_dtype": "fp8",
+        "quantization": "quark",
+        "gpu_memory_utilization": 0.94,
+        "swap_space": 0.0,
+        "block_size": 32,
+        "num_scheduler_steps": 19,
+        "max_seq_len_to_capture": 2048,
+        "max_num_batched_tokens": 65536,
+        "max_num_seqs": 3450,
+        "disable_custom_all_reduce": true,
+        "enable_chunked_prefill": false,
+        "skip_tokenizer_init": false
+    }
+}

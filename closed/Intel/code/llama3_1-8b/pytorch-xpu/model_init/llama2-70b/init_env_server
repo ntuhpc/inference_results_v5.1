@@ -1,0 +1,29 @@
+#!/bin/bash
+
+source $MODEL_INIT_DIR/init_env_shared
+# Validate and set Tensor parallel and Instances
+export TP=1
+export NUM_INSTS=1
+
+if (( XPU_COUNT > 0 )); then
+    # XPU
+    export TP=2
+    export NUM_INSTS=$((XPU_COUNT / (TP*PP)))
+    export BATCH_SIZE=160
+    export MAX_NUM_BATCHED_TOKENS=320
+    export VLLM_XPU_ATTN_IMPL=chunk_page
+    export VLLM_XPU_PA_IMPL=triton
+    export VLLM_USE_SEPARATE_QUANT=1
+    export VLLM_FUSE_NORM_QUANT=1
+    export VLLM_FUSE_SILU_QUANT=1
+    export VLLM_ENABLE_SEQ_PARALLEL=1
+    export GPU_MEMORY_UTILIZATION=0.99
+
+    # Target QPS settings
+    QPS_PER_XPU=0.9625
+    TARGET_QPS=$(echo "scale=2; $QPS_PER_XPU * $XPU_COUNT" | bc)
+    sed -i "/llama2-70b.Server.target_qps/c\llama2-70b.Server.target_qps = $TARGET_QPS" $ROOT_DIR/user.conf
+else
+    # CPU
+    echo "Error: No XPU found. CPU is not enabled for this scenario"
+fi

@@ -1,0 +1,7 @@
+{
+    "starting_weights_filename": "Llama-2-70b-chat-hf",
+    "weight_transformations": "Yes",
+    "weight_data_types": "UINT4",
+    "input_data_types": "UINT8",
+    "retraining": "No"
+}

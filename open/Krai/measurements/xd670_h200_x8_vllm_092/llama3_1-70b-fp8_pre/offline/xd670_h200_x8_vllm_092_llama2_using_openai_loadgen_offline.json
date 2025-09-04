@@ -1,0 +1,7 @@
+{
+    "retraining": "yes",
+    "input_data_types": "UNSET",
+    "weight_data_types": "UNSET",
+    "starting_weights_filename": "UNSET",
+    "weight_transformations": "UNSET"
+}

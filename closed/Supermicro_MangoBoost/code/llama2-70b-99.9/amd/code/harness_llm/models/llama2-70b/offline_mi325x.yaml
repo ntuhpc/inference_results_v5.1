@@ -1,0 +1,54 @@
+defaults: []
+
+# benchmark details
+benchmark_name: llama2-70b
+scenario: offline
+test_mode: performance
+
+env_config:
+  VLLM_LOGGING_LEVEL: "ERROR"
+  HARNESS_GC_LIMIT: 100000
+  VLLM_LLAMA2_MLPERF_SCHED: 1
+  VLLM_LLAMA2_MLPERF_MAX_TARGET_DECODE_BATCH: 2048
+  VLLM_LLAMA2_MLPERF_MIN_TARGET_DECODE_BATCH: 2048
+  VLLM_LLAMA2_MLPERF_STEP_DECODE_BATCH: 256
+
+# configuration related to the LLM model.
+llm_config:
+  model: /model/llama2-70b-chat-hf/fp8_quantized
+  tensor_parallel_size: 1
+  num_scheduler_steps: 11
+  quantization: fp8
+  max_model_len: 2048
+  swap_space: 0
+  gpu_memory_utilization: 0.98
+  max_seq_len_to_capture: 2048
+  enforce_eager: True
+  disable_custom_all_reduce: True
+  max_num_batched_tokens: 65000
+  max_num_seqs: 2700
+  enable_chunked_prefill: False
+  block_size: 32
+  enable_prefix_caching: False
+
+# configuration related to the sampling params
+sampling_params:
+  temperature: 0.0
+  min_tokens: 1
+  max_tokens: 1024
+  ignore_eos: False
+  detokenize: False
+
+# configuration related to the harness tests.
+harness_config:
+  dataset_path: /data/processed-openorca/open_orca_gpt4_tokenized_llama.sampled_24576.pkl
+  mlperf_conf_path: /app/mlperf_inference/mlperf.conf
+  user_conf_path: /lab-mlperf-inference/code/user_mi325x.conf
+  target_qps: -1 # 80
+  total_sample_count: 24576
+  output_log_dir: /app/logs
+  enable_log_trace: False
+  warmup_duration: 0
+  enable_warm_up: True
+  warm_up_sample_count_per_server: 10
+  data_parallel_size: 8

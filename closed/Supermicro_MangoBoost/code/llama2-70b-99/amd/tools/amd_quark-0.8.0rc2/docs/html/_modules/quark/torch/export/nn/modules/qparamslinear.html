@@ -1,0 +1,1050 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quark.torch.export.nn.modules.qparamslinear &#8212; Quark 0.8.0rc2 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=6b4ca4e1" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/rocm_header.css?v=4044f309" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/rocm_footer.css?v=25204c5a" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/fonts.css?v=fcff5274" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../../../../_static/documentation_options.js?v=d42b94c0"></script>
+    <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="../../../../../../_static/code_word_breaks.js?v=327952c4"></script>
+    <script async="async" src="../../../../../../_static/renameVersionLinks.js?v=929fe5e4"></script>
+    <script async="async" src="../../../../../../_static/rdcMisc.js?v=01f88d96"></script>
+    <script async="async" src="../../../../../../_static/theme_mode_captions.js?v=15f4ec5d"></script>
+    <script src="../../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/quark/torch/export/nn/modules/qparamslinear';</script>
+    <script async="async" src="https://download.amd.com/js/analytics/analyticsinit.js"></script>
+    <link rel="icon" href="https://www.amd.com/themes/custom/amd/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+<script type="text/javascript">
+    window.addEventListener("load", function(event) {
+        var coll = document.querySelectorAll('.toggle > .header');  // sdelect the toggles header.
+        var i;
+
+        for (i = 0; i < coll.length; i++) {                        
+            coll[i].innerText = "Show code ▼\n\n";
+            
+            coll[i].addEventListener("click", function() {
+                var content = this.nextElementSibling;  // code block.
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    this.innerText = "Show code ▼\n\n";
+                } else {
+                    content.style.display = "block";
+                    this.innerText = "Hide code ▶";
+                }
+            });
+        }
+    });
+</script>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+
+<header class="common-header" >
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid main-nav rocm-header">
+            
+            <button class="navbar-toggler collapsed" id="nav-icon" data-tracking-information="mainMenuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="header-logo">
+                <a class="navbar-brand" href="https://www.amd.com/">
+                    <img src="../../../../../../_static/images/amd-header-logo.svg" alt="AMD Logo" title="AMD Logo" width="90" class="d-inline-block align-text-top hover-opacity"/>
+                </a>
+                <div class="vr vr mx-40 my-25"></div>
+                <a class="klavika-font hover-opacity" href="https://quark.docs.amd.com">Quark</a>
+                <a class="header-all-versions" href="https://quark.docs.amd.com/latest/versions.html">Version List</a>
+            </div>
+            <div class="icon-nav text-center d-flex ms-auto">
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-xl second-level-nav">
+        <div class="container-fluid main-nav">
+            <div class="navbar-nav-container collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-mega me-auto mb-2 mb-lg-0 col-xl-10">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link top-level header-menu-links" href="https://gitenterprise.xilinx.com/AMDNeuralOpt/Quark" id="navgithub" role="button" aria-expanded="false" target="_blank" >
+                                GitHub
+                            </a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link top-level header-menu-links" href="https://gitenterprise.xilinx.com/AMDNeuralOpt/Quark/issues/new/choose" id="navsupport" role="button" aria-expanded="false" target="_blank" >
+                                Support
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Quark 0.8.0rc2 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../release_note.html">Release Information</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started with AMD Quark</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../intro.html">Introduction to Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../install.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../basic_usage.html">Basic Usage</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/basic_usage_pytorch.html">AMD Quark for PyTorch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/basic_usage_onnx.html">AMD Quark for ONNX</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/pytorch_examples.html">Accessing PyTorch Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_diffusers.html">Diffusion Model Quantization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_brevitas.html">AMD Quark Extension for Brevitas Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_pytorch_light.html">Integration with AMD Pytorch-light (APL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_pruning.html">Language Model Pruning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_ptq.html">Language Model PTQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_qat.html">Language Model QAT</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval.html">Language Model Evaluation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_perplexity.html">Perplexity Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_rouge_meteor.html">Rouge &amp; Meteor Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_harness.html">LM-Evaluation Harness Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_harness_offline.html">LM-Evaluation Harness (Offline)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_vision.html">Vision Model Quantization using FX Graph Mode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../onnx/onnx_examples.html">Accessing ONNX Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_BFP.html">Block Floating Point (BFP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_MX.html">MX Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_adaround.html">Fast Finetune AdaRound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_adaquant.html">Fast Finetune AdaQuant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_cle.html">Cross-Layer Equalization (CLE)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_gptq.html">GPTQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_mixed_precision.html">Mixed Precision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_smoothquant.html">Smooth Quant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_quarot.html">QuaRot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_dynamic_quantization_llama2.html">Quantizing an Llama-2-7b Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_dynamic_quantization_opt.html">Quantizing an OPT-125M Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_image_classification.html">Quantizing a ResNet50-v1-12 Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_language_models.html">Quantizing an OPT-125M Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_weights_only_quant_int4_matmul_nbits_llama2.html">Quantizing an Llama-2-7b Model Using the ONNX MatMulNBits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_weights_only_quant_int8_qdq_llama2.html">Quantizating Llama-2-7b model using MatMulNBits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/image_classification_example_quark_onnx_ryzen_ai_best_practice.html">Best Practice for Quantizing an Image Classification Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/object_detection_example_quark_onnx_ryzen_ai_best_practice.html">Best Practice for Quantizing an Object Detection Model</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced AMD Quark Features for PyTorch</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/user_guide_config_description.html">Configuring PyTorch Quantization</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/calibration_methods.html">Calibration Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/calibration_datasets.html">Calibration Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/quantization_strategies.html">Quantization Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/quantization_schemes.html">Quantization Schemes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/quantization_symmetry.html">Quantization Symmetry</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/quark_save_load.html">Save and Load Quantized Models</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/export/quark_export.html">Exporting Quantized Models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/export/quark_export_onnx.html">ONNX Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/export/quark_export_hf.html">HuggingFace Format</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../pytorch/export/quark_export_gguf.html">GGUF Format</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/export/gguf_llamacpp.html">Bridge from Quark to llama.cpp</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/export/quark_export_quark.html">Quark Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/export/quark_export_oga.html">ONNX Runtime Gen AI Model Builder</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/quark_torch_best_practices.html">Best Practices for Post-Training Quantization (PTQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/debug.html">Debugging quantization Degradation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/llm_quark.html">Language Model Optimization</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_pruning.html">Pruning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_ptq.html">Language Model Post Training Quantization (PTQ) Using Quark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_qat.html">Language Model QAT Using Quark</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval.html">Language Model Evaluations in Quark</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_perplexity.html">Perplexity Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_rouge_meteor.html">Rouge &amp; Meteor Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_harness.html">LM-Evaluation Harness Evaluations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_llm_eval_harness_offline.html">LM-Evaluation Harness (Offline)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/tutorial_rotation.html">Quantizing with Rotation and SmoothQuant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/tutorial_quarot.html">Rotation-based quantization with QuaRot</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/smoothquant.html">Activation/Weight Smoothing (SmoothQuant)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/tutorial_bfp16.html">Block Floating Point 16</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/extensions.html">Extensions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_pytorch_light.html">Integration with AMD Pytorch-light (APL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../pytorch/example_quark_torch_brevitas.html">Brevitas Integration</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/adv_mx.html">Using MX (Microscaling)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/adv_two_level.html">Two Level Quantization Formats</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Quark Features for ONNX</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../onnx/user_guide_config_description.html">Configuring ONNX Quantization</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/appendix_full_quant_config_features.html">Full List of Quantization Config Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/config/calibration_methods.html">Calibration methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/config/calibration_datasets.html">Calibration datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/config/quantization_strategies.html">Quantization Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/config/quantization_schemes.html">Quantization Schemes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/config/quantization_symmetry.html">Quantization Symmetry</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/user_guide_supported_optype_datatype.html">Data and OP Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/gpu_usage_guide.html">Accelerate with GPUs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/tutorial_mix_precision.html">Mixed Precision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/bfp16.html">Block Floating Point 16 (BFP16)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/tutorial_bf16_quantization.html">BF16 Quantization</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../onnx/accuracy_improvement_algorithms.html">Accuracy Improvement Algorithms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/accuracy_algorithms/cle.html">Quantizing Using CrossLayerEqualization (CLE)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/accuracy_algorithms/ada.html">Quantization Using AdaQuant and AdaRound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/accuracy_algorithms/sq.html">SmoothQuant (SQ)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../onnx/example_quark_onnx_gptq.html">Quantizating a model with GPTQ</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/optional_utilities.html">Optional Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/tools.html">Tools</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">APIs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../pytorch/pytorch_apis.html">PyTorch APIs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/pruning/api/index.html">Pruning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/quantization/api/index.html">Quantization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/export/api/index.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/pruning/config/index.html">Pruner Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/quantization/config/config/index.html">Quantizer Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/torch/export/config/config/index.html">Exporter Configuration</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../onnx/onnx_apis.html">ONNX APIs</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/quantization/api/index.html">Quantization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/optimize/index.html">Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/calibrate/index.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/onnx_quantizer/index.html">ONNX Quantizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/qdq_quantizer/index.html">QDQ Quantizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/quantization/config/config/index.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../../autoapi/quark/onnx/quant_utils/index.html">Quantization Utilities</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Troubleshooting and Support</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../pytorch/pytorch_faq.html">PyTorch FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../onnx/onnx_faq.html">ONNX FAQ</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-angle-right"></span>
+  </label></div>
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../../../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">quark.torch.export.nn.modules.qparamslinear</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for quark.torch.export.nn.modules.qparamslinear</h1><div class="highlight"><pre>
+<span></span>#
+# Copyright (C) 2023, Advanced Micro Devices, Inc. All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+
+from typing import Any, Optional, List, Dict, Tuple
+import torch
+from torch import nn
+from torch.nn.parameter import Parameter
+from torch.nn import functional as F
+import torch.version
+from quark.torch.quantization.config.config import QuantizationConfig
+from quark.torch.quantization.config.type import Dtype
+from quark.torch.quantization.nn.modules.quantize_linear import QuantLinear
+from quark.torch.utils.pack import create_pack_method
+from quark.torch.quantization.config.type import QSchemeType
+from quark.torch.export.constants import AWQ_LOAD_MAP, LOAD_MAP, SAVE_MAP, AWQ_SAVE_MAP
+from quark.torch.export.nn.modules.realquantizer import RealQuantizerBase
+from collections import OrderedDict
+import subprocess
+import re
+
+SCALE_MM_IS_AVAILBLE = False
+
+
+def check_scale_mm_is_available() -&gt; None:
+    global SCALE_MM_IS_AVAILBLE
+    if torch.version.cuda is not None:
+        device = torch.device(&quot;cuda&quot;)
+        compute_capability = torch.cuda.get_device_capability(device)
+        major, minor = compute_capability
+        if (major, minor) &gt;= (9, 0) or (major == 8 and minor &gt;= 9):
+            SCALE_MM_IS_AVAILBLE = True
+
+    elif torch.version.hip is not None:
+        result = subprocess.run(&quot;rocminfo | grep -i &#39;gfx&#39;&quot;, capture_output=True, text=True, shell=True)
+
+        if result.returncode != 0:
+            raise FileNotFoundError(&quot;The `rocminfo` command failed or was not found.&quot;)
+
+        output = result.stdout.strip()
+        matches = re.findall(r&quot;gfx(\d+)&quot;, output.lower())
+
+        SCALE_MM_IS_AVAILBLE = True if len(matches) &gt; 0 else False
+        for match in matches:
+            version_number = int(match)
+            if version_number &lt; 940:
+                # In general, all video card models should be the same,
+                # All graphics cards must be eligible
+                SCALE_MM_IS_AVAILBLE = False
+                break
+
+
+check_scale_mm_is_available()
+
+
+def normalize_e4m3fn_to_e4m3fnuz(weight: torch.Tensor,
+                                 qinput: torch.Tensor,
+                                 weight_scale: torch.Tensor,
+                                 input_scale: Optional[torch.Tensor] = None
+                                 ) -&gt; Tuple[torch.Tensor, torch.Tensor, torch.Tensor, Optional[torch.Tensor]]:
+    assert weight.dtype == torch.float8_e4m3fn
+    assert qinput.dtype == torch.float8_e4m3fn
+    ROCM_FP8_NAN_AS_INT = -128
+
+    weight_as_int8 = weight.view(torch.int8)
+    weight_as_int8[weight_as_int8 == ROCM_FP8_NAN_AS_INT] = 0
+    weight = weight_as_int8.view(torch.float8_e4m3fnuz)
+
+    qinput_as_int8 = qinput.view(torch.int8)
+    qinput_as_int8[qinput_as_int8 == ROCM_FP8_NAN_AS_INT] = 0
+    qinput = qinput_as_int8.view(torch.float8_e4m3fnuz)
+
+    weight_scale = weight_scale * 2.0
+    if input_scale is not None:
+        input_scale = input_scale * 2.0
+    return weight, qinput, weight_scale, input_scale
+
+
+<div class="viewcode-block" id="QparamsOperator">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QparamsOperator">[docs]</a>
+class QparamsOperator(torch.nn.Module):
+
+    def __init__(self, *args: Any, **kwargs: Any) -&gt; None:
+        super().__init__(*args, **kwargs)
+        self.weight_quantizer: Optional[RealQuantizerBase] = None
+        self.bias_quantizer: Optional[RealQuantizerBase] = None
+        self.input_quantizer: Optional[RealQuantizerBase] = None
+        self.output_quantizer: Optional[RealQuantizerBase] = None</div>
+
+
+
+<div class="viewcode-block" id="QParamsLinear">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QParamsLinear">[docs]</a>
+class QParamsLinear(QparamsOperator):
+
+    def __init__(self,
+                 linear: nn.Linear,
+                 custom_mode: str,
+                 pack_method: Optional[str] = &quot;reorder&quot;,
+                 quant_config: Optional[QuantizationConfig] = None):
+        super().__init__()
+
+        reorder = True if pack_method == &quot;reorder&quot; else False
+        self._custom_mode: str = custom_mode
+        self._init_qparamlinear(linear, reorder, quant_config)
+
+    def _init_qparamlinear(self,
+                           linear: nn.Linear,
+                           reorder: bool,
+                           quant_config: Optional[QuantizationConfig] = None) -&gt; None:
+        if isinstance(linear, QuantLinear) and quant_config is None:
+            self.weight: torch.nn.Parameter = torch.nn.Parameter(linear.weight)
+            self.bias: Optional[torch.nn.Parameter] = linear.bias if linear.bias is not None else None
+
+            device = linear.weight.device
+
+            # We always pass `torch.float32` as `float_dtype` for now, meaning that
+            # initialized scales will always be in float32, even if serialized in float16.
+            # Although suboptimal, in case float32 scales are used and the pre-loaded model is in float16,
+            # we can not rely on e.g. `linear.weight.dtype`, as later on `load_state_dict` would load fp32 scales
+            # into fp16 instanciated parameters.
+            float_dtype = torch.float32
+
+            if linear.weight_qspec is not None and linear.weight_quantizer is not None:
+                self.weight_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=linear.weight_qspec,
+                                                                              quantizer=linear.weight_quantizer,
+                                                                              reorder=reorder,
+                                                                              real_quantized=True,
+                                                                              device=device,
+                                                                              float_dtype=float_dtype)
+
+            if linear.bias_qspec is not None and linear.bias_quantizer is not None:
+                self.bias_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=linear.bias_qspec,
+                                                                            quantizer=linear.bias_quantizer,
+                                                                            reorder=reorder,
+                                                                            real_quantized=True,
+                                                                            device=device,
+                                                                            float_dtype=float_dtype)
+
+            if linear.input_qspec is not None and linear.input_quantizer is not None:
+                self.input_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=linear.input_qspec,
+                                                                             quantizer=linear.input_quantizer,
+                                                                             reorder=reorder,
+                                                                             real_quantized=False,
+                                                                             device=device,
+                                                                             float_dtype=float_dtype)
+
+            if linear.output_qspec is not None and linear.output_quantizer is not None:
+                self.output_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=linear.output_qspec,
+                                                                              quantizer=linear.output_quantizer,
+                                                                              reorder=reorder,
+                                                                              real_quantized=False,
+                                                                              device=device,
+                                                                              float_dtype=float_dtype)
+            self._real_quantize()
+        elif isinstance(linear, nn.Linear) and quant_config is not None:
+            device = linear.weight.device
+            float_dtype = torch.float32
+            in_features = linear.in_features
+            out_features = linear.out_features
+
+            if linear.bias is not None:
+                self.bias = torch.nn.Parameter(torch.empty((out_features, ), device=device, dtype=float_dtype),
+                                               requires_grad=False)
+            else:
+                self.bias = None
+
+            # create weight, scale, zeropoint and initialize weight quantized parameters with correct shape, dtype.
+            # TODO: weight uses infer_packed_shape func , what about sacle zeropoint
+            if quant_config.weight is not None:
+                quant_torch_dtype = quant_config.weight.dtype.to_torch_packed_dtype()
+                pack_method = create_pack_method(
+                    qscheme=quant_config.weight.qscheme.value,  # type: ignore[union-attr]
+                    dtype=quant_config.weight.dtype.value)
+
+                # Retrieve the quantized weight shape. For example, int4/uint4 does packing on torch.int32.
+                weight_shape, scale_shape, zero_point_shape = pack_method.infer_packed_shape(
+                    unpacked_shape=(out_features, in_features),
+                    quantization_spec=quant_config.weight,
+                    legacy=False,
+                    custom_mode=self._custom_mode)
+
+                self.weight = torch.nn.Parameter(torch.empty(weight_shape, device=device, dtype=quant_torch_dtype),
+                                                 requires_grad=False)
+                self.weight_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=quant_config.weight,
+                                                                              quantizer=None,
+                                                                              reorder=reorder,
+                                                                              real_quantized=True,
+                                                                              device=device,
+                                                                              scale_shape=scale_shape,
+                                                                              zero_point_shape=zero_point_shape,
+                                                                              float_dtype=float_dtype)
+            else:
+                self.weight = torch.nn.Parameter(torch.empty((out_features, in_features),
+                                                             device=device,
+                                                             dtype=float_dtype),
+                                                 requires_grad=False)
+
+            # Initialize bias quantized parameters with correct shape, dtype.
+            if quant_config.bias is not None:
+                self.bias_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=quant_config.bias,
+                                                                            quantizer=None,
+                                                                            reorder=reorder,
+                                                                            real_quantized=True,
+                                                                            device=device,
+                                                                            float_dtype=float_dtype)
+                if quant_config.bias.qscheme != QSchemeType.per_tensor:
+                    raise NotImplementedError(
+                        &quot;Reloading a quantized model using QParamsLinear with the bias quantized per channel or per group is not supported.&quot;
+                    )
+                if hasattr(self.bias_quantizer, &quot;transpose_scale&quot;):
+                    # bias need not transpose_scale
+                    self.bias_quantizer.transpose_scale = False  # type: ignore
+
+            # Initialize input quantized parameters with correct shape, dtype.
+            if quant_config.input_tensors is not None:
+                self.input_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=quant_config.input_tensors,
+                                                                             quantizer=None,
+                                                                             reorder=reorder,
+                                                                             real_quantized=False,
+                                                                             device=device,
+                                                                             float_dtype=float_dtype)
+                if quant_config.input_tensors.is_dynamic:
+                    raise NotImplementedError(
+                        &quot;QParamsLinear does not support is_dynamic=True for now. Please open an issue.&quot;)
+                if quant_config.input_tensors.qscheme != QSchemeType.per_tensor:
+                    raise NotImplementedError(
+                        &quot;Reloading a quantized model using QParamsLinear with the input quantized per channel or per group is not supported. Please open an issue.&quot;
+                    )
+
+            # Initialize output quantized parameters with correct shape, dtype.
+            if quant_config.output_tensors is not None:
+                self.output_quantizer = RealQuantizerBase.from_fake_quantizer(qspec=quant_config.output_tensors,
+                                                                              quantizer=None,
+                                                                              reorder=reorder,
+                                                                              real_quantized=False,
+                                                                              device=device,
+                                                                              float_dtype=float_dtype)
+                if quant_config.output_tensors.is_dynamic:
+                    raise NotImplementedError(
+                        &quot;QParamsLinear does not support is_dynamic=True for now. Please open an issue.&quot;)
+                if quant_config.output_tensors.qscheme != QSchemeType.per_tensor:
+                    raise NotImplementedError(
+                        &quot;Reloading a quantized model using QParamsLinear with the output quantized per channel or per group is not supported.&quot;
+                    )
+        else:
+            raise ValueError(f&quot;Unsupported module type: {type(linear)}&quot;)
+
+    @classmethod
+<div class="viewcode-block" id="QParamsLinear.from_module">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QParamsLinear.from_module">[docs]</a>
+    def from_module(
+        cls,
+        linear: nn.Linear,
+        custom_mode: str,
+        pack_method: Optional[str] = &quot;reorder&quot;,
+        quant_config: Optional[QuantizationConfig] = None,
+    ) -&gt; &quot;QParamsLinear&quot;:
+        &#39;&#39;&#39;
+        Build a QParamsLinear from a QuantLinear or nn.Linear.
+        Initialize the shape and data type of weight and bias in importing.
+        Initialize weight and bias in exporting.
+        &#39;&#39;&#39;
+        qparamslinear = cls(linear=linear, custom_mode=custom_mode, pack_method=pack_method, quant_config=quant_config)
+        return qparamslinear</div>
+
+
+<div class="viewcode-block" id="QParamsLinear.forward">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QParamsLinear.forward">[docs]</a>
+    def forward(self, *args: Any, **kwargs: Any) -&gt; torch.Tensor:
+        &#39;&#39;&#39;
+        Dequantizes quantized weight/bias, runs a linear in high precision and apply QDQ on the (input)activation/output if required.
+        &#39;&#39;&#39;
+        dtype = args[0].dtype
+        if self._custom_mode == &quot;fp8&quot; and SCALE_MM_IS_AVAILBLE:
+            # pertensor only
+            assert self.input_quantizer is not None
+            assert self.weight_quantizer is not None
+            input = args[0]
+
+            max_value = 448 if self.input_quantizer.qspec.dtype == Dtype.fp8_e4m3 else 57344
+            input_2d = input.view(-1, input.shape[-1])
+            input_2d = input_2d / self.input_quantizer.scale
+            input_2d = torch.clamp(input_2d, min=-max_value, max=max_value)
+            qinput = input_2d.to(self.input_quantizer.qspec.dtype.to_torch_packed_dtype())
+
+            weight = self.weight.t()
+            output_shape = [*input.shape[:-1], weight.shape[1]]
+            input_scale = self.input_quantizer.scale
+            weight_scale = self.weight_quantizer.scale
+            assert weight_scale.numel() == 1
+            assert input_scale.numel() == 1
+            weight, qinput, weight_scale, input_scale = \
+                normalize_e4m3fn_to_e4m3fnuz(
+                            weight=weight,
+                            qinput=qinput,
+                            weight_scale=weight_scale,
+                            input_scale=input_scale)
+
+            if self.bias is not None:
+                bias = self.bias.to(input.dtype)
+            else:
+                bias = None
+            output = torch._scaled_mm(qinput,
+                                      weight,
+                                      out_dtype=dtype,
+                                      scale_a=input_scale,
+                                      scale_b=weight_scale,
+                                      bias=bias)
+            quant_output: torch.Tensor = self._get_qoutput(output).to(dtype)  # type: ignore
+            quant_output = quant_output.view(*output_shape)
+        else:
+            qinput = self._get_qinput(args[0]).to(dtype)
+            qweight = self._get_qweight(self.weight).to(dtype)
+            qbias = self._get_qbias(self.bias)
+            if qbias is not None:
+                qbias = qbias.to(dtype)
+            qoutput = F.linear(qinput, qweight, bias=qbias)
+            quant_output = self._get_qoutput(qoutput).to(dtype)
+
+        return quant_output</div>
+
+
+    def _get_qweight(self, x: Parameter) -&gt; torch.Tensor:
+        if self.weight_quantizer is not None:
+            x = self.weight_quantizer(x.data)
+            assert isinstance(x, torch.Tensor)
+            return x
+        else:
+            return x.data
+
+    def _get_qbias(self, x: Optional[Parameter]) -&gt; Optional[torch.Tensor]:
+        if self.bias_quantizer is not None and x is not None:
+            x = self.bias_quantizer(x.data)
+            assert isinstance(x, torch.Tensor)
+            return x
+        else:
+            return x.data if x is not None else x
+
+    def _get_qinput(self, x: torch.Tensor) -&gt; torch.Tensor:
+        if self.input_quantizer is not None:
+            x = self.input_quantizer(x)
+            assert isinstance(x, torch.Tensor)
+            return x
+        else:
+            return x
+
+    def _get_qoutput(self, x: torch.Tensor) -&gt; torch.Tensor:
+        if self.output_quantizer is not None:
+            x = self.output_quantizer(x)
+            assert isinstance(x, torch.Tensor)
+            return x
+        else:
+            return x
+
+    def _real_quantize(self) -&gt; None:
+        &#39;&#39;&#39;
+        Calls `_to_real_quantize_params` to do weight and bias real quantization on low-bit datatypes, and calls `pack_qinfo` to do scale and zero_point packing.
+        &#39;&#39;&#39;
+        self._to_real_quantize_params()
+        self.pack_qinfo()
+
+    def _to_real_quantize_params(self) -&gt; None:
+        &#39;&#39;&#39;
+        Calls `to_real_quantize_params` of real_quantizer to do weight and bias real quantization on low-bit datatypes
+        &#39;&#39;&#39;
+        if self.weight_quantizer is not None and self.weight_quantizer.qspec.is_dynamic is False:
+            w_res = self.weight_quantizer.to_real_quantize_params(self.weight)
+            self.weight = nn.Parameter(w_res, requires_grad=False)
+
+        # Replaces the high-precision fake quantized bias (QDQ) by a low-precision bias.
+        if self.bias is not None and self.bias_quantizer is not None and self.bias_quantizer.qspec.is_dynamic is False:
+            b_res = self.bias_quantizer.to_real_quantize_params(self.bias)
+            self.bias = nn.Parameter(b_res, requires_grad=False)
+
+<div class="viewcode-block" id="QParamsLinear.pack_qinfo">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QParamsLinear.pack_qinfo">[docs]</a>
+    def pack_qinfo(self) -&gt; None:
+        &#39;&#39;&#39;
+        Calls `RealQuantizer.pack_zero_point`` and `RealQuantizer.maybe_transpose_scale` to do scale, zero_point packing if required.
+        &#39;&#39;&#39;
+        if self.weight_quantizer is not None:
+            self.weight_quantizer.pack_zero_point()
+            self.weight_quantizer.maybe_transpose_scale()
+        if self.bias_quantizer is not None:
+            self.bias_quantizer.pack_zero_point()
+            self.bias_quantizer.maybe_transpose_scale()
+        if self.input_quantizer is not None:
+            self.input_quantizer.pack_zero_point()
+            self.input_quantizer.maybe_transpose_scale()
+        if self.output_quantizer is not None:
+            self.output_quantizer.pack_zero_point()
+            self.output_quantizer.maybe_transpose_scale()</div>
+
+
+<div class="viewcode-block" id="QParamsLinear.state_dict">
+<a class="viewcode-back" href="../../../../../../autoapi/quark/torch/export/nn/modules/qparamslinear/index.html#quark.torch.export.nn.modules.qparamslinear.QParamsLinear.state_dict">[docs]</a>
+    def state_dict(self, *args: Any, destination: Any = None, prefix: str = &quot;&quot;, keep_vars: bool = False) -&gt; Any:
+        # Save scale, zeropoint of realquantizer directly at the qparamlinear level.
+        # Since the recursive call of `state_dict`, Overloading `_save_to_state_dict` can not prevent real_quantizer from calling its `_save_to_state_dict`.
+        if self._custom_mode == &quot;awq&quot;:
+            name_map = AWQ_SAVE_MAP
+        elif self._custom_mode == &quot;fp8&quot; or self._custom_mode == &quot;quark&quot;:
+            name_map = SAVE_MAP
+        else:
+            raise ValueError(f&quot;Not supported custom_mode{self._custom_mode}&quot;)
+
+        if destination is None:  # pragma: no cover
+            destination = OrderedDict()
+            destination._metadata = OrderedDict()
+        # seperate scale from tensor when mx
+        is_mx_export = self.weight_quantizer is not None and self.weight_quantizer.qspec.dtype.value == &quot;mx&quot;
+        if self.weight_quantizer is not None and is_mx_export:
+            scale_weight_shape = list(self.weight.shape)
+            scale_weight = self.weight.reshape(-1, 17)
+            scale = scale_weight[:, :1].reshape(scale_weight_shape[0], -1).contiguous()
+            weight = scale_weight[:, 1:].reshape(scale_weight_shape[0], -1).contiguous()
+
+            destination[prefix + name_map[&quot;weight&quot;]] = weight
+            destination[prefix + name_map[&quot;weight_scale&quot;]] = scale
+            # return destination
+
+        if self.weight is not None and not is_mx_export:
+            destination[prefix + name_map[&quot;weight&quot;]] = self.weight if keep_vars else self.weight.detach()
+        if self.bias is not None:
+            destination[prefix + &quot;bias&quot;] = self.bias if keep_vars else self.bias.detach()
+
+        # scales and zero_points
+        if self.weight_quantizer is not None and self.weight_quantizer.qspec.is_dynamic is False and not is_mx_export:
+            if hasattr(self.weight_quantizer, &quot;scale&quot;) and self.weight_quantizer.scale is not None:
+                destination[prefix + name_map[
+                    &quot;weight_scale&quot;]] = self.weight_quantizer.scale if keep_vars else self.weight_quantizer.scale.detach(
+                    )
+            if hasattr(self.weight_quantizer, &quot;zero_point&quot;) and self.weight_quantizer.zero_point is not None:
+                destination[prefix + name_map[
+                    &quot;weight_zero_point&quot;]] = self.weight_quantizer.zero_point if keep_vars else self.weight_quantizer.zero_point.detach(
+                    )
+
+        # TODO: Does bias get special treatment in awq cases?
+        if self.bias_quantizer is not None and self.bias_quantizer.qspec.is_dynamic is False:
+            if self.bias_quantizer.scale is not None:
+                destination[
+                    prefix +
+                    &quot;bias_scale&quot;] = self.bias_quantizer.scale if keep_vars else self.bias_quantizer.scale.detach()
+            if self.bias_quantizer.zero_point is not None:
+                destination[
+                    prefix +
+                    &quot;bias_zero_point&quot;] = self.bias_quantizer.zero_point if keep_vars else self.bias_quantizer.zero_point.detach(
+                    )
+        if self.input_quantizer is not None and self.input_quantizer.qspec.is_dynamic is False:
+            if self.input_quantizer.scale is not None:
+                destination[
+                    prefix +
+                    &quot;input_scale&quot;] = self.input_quantizer.scale if keep_vars else self.input_quantizer.scale.detach()
+            if self.input_quantizer.zero_point is not None:
+                destination[
+                    prefix +
+                    &quot;input_zero_point&quot;] = self.input_quantizer.zero_point if keep_vars else self.input_quantizer.zero_point.detach(
+                    )
+        if self.output_quantizer is not None and self.output_quantizer.qspec.is_dynamic is False:
+            if self.output_quantizer.scale is not None:
+                destination[
+                    prefix +
+                    &quot;output_scale&quot;] = self.output_quantizer.scale if keep_vars else self.output_quantizer.scale.detach(
+                    )
+            if self.output_quantizer.zero_point is not None:
+                destination[
+                    prefix +
+                    &quot;output_zero_point&quot;] = self.output_quantizer.zero_point if keep_vars else self.output_quantizer.zero_point.detach(
+                    )
+        if hasattr(self, &quot;weight_scale1&quot;) and self.weight_scale1 is not None:
+            destination[prefix + &quot;weight_scale1&quot;] = self.weight_scale1 if keep_vars else self.weight_scale1.detach()
+        return destination</div>
+
+
+    def _load_from_state_dict(
+        self,
+        state_dict: Dict[str, Any],
+        prefix: str,
+        local_metadata: Dict[str, Any],
+        strict: bool,
+        missing_keys: List[str],
+        unexpected_keys: List[str],
+        error_msgs: List[str],
+    ) -&gt; None:
+        if self._custom_mode == &quot;awq&quot;:
+            rename_map = AWQ_LOAD_MAP
+        else:
+            rename_map = LOAD_MAP
+        keys = list(state_dict.keys())
+
+        for name in keys:
+            full_name = name
+            # is None represent common custom_mode
+            if rename_map is not None:
+                to_remap = name[len(prefix):]
+                suffix = rename_map[to_remap]
+                full_name = prefix + suffix
+            param = state_dict[name]
+            # Backward compatibility: loading 1-dim tensor from 0.3.* to version 0.4+
+            if (&quot;scale&quot; in name or &quot;zero_point&quot; in name) and param.ndim == 0 and param.ndim == 1:
+                param = param[0]
+            if full_name != name:
+                state_dict[full_name] = param
+                del state_dict[name]
+
+        super()._load_from_state_dict(state_dict, prefix, local_metadata, strict, missing_keys, unexpected_keys,
+                                      error_msgs)  # type: ignore</div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <p>
+      Last updated on Feb 12, 2025.<br/>
+  </p>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+<footer class="rocm-footer">
+    <div class="container-lg">
+        <section class="bottom-menu menu py-45">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 text-center">
+                    <ul>
+                        <li><a href="https://www.amd.com/en/corporate/copyright" target="_blank">Terms and Conditions</a></li>
+                        <li><a href="https://quark.docs.amd.com/latest/license.html">Quark Licenses and Disclaimers</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/privacy" target="_blank">Privacy</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/trademarks" target="_blank">Trademarks</a></li>
+                        <li><a href="https://www.amd.com/system/files/documents/statement-human-trafficking-forced-labor.pdf" target="_blank">Statement on Forced Labor</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/competition" target="_blank">Fair and Open Competition</a></li>
+                        <li><a href="https://www.amd.com/system/files/documents/amd-uk-tax-strategy.pdf" target="_blank">UK Tax Strategy</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/cookies" target="_blank">Cookie Policy</a></li>
+                        <!-- OneTrust Cookies Settings button start -->
+                        <li><a href="#cookie-settings" id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</a></li>
+                        <!-- OneTrust Cookies Settings button end -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 text-center">
+                    <div>
+                        <span class="copyright">© 2024 Advanced Micro Devices, Inc</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+<!-- <div id="rdc-watermark-container">
+    <img id="rdc-watermark" src="../../../../../../_static/images/alpha-watermark.svg" alt="DRAFT watermark"/>
+</div> -->
+  </body>
+</html>

@@ -1,0 +1,14 @@
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG VLLM_DIR=setup/vllm
+
+# Re-install vllm
+COPY ${VLLM_DIR} /lab-mlperf-inference/vllm
+RUN cd /lab-mlperf-inference/vllm \
+    && python3 -m pip uninstall -y vllm \
+    && python3 setup_cython.py build_ext --inplace \
+    && SCCACHE_IDLE_TIMEOUT=1800 python3 setup.py develop
+
+WORKDIR /lab-mlperf-inference/submission/

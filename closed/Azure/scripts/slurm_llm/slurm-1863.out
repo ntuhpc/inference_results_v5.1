@@ -1,0 +1,80 @@
++ export scenario=offline
++ scenario=offline
+++ scontrol show hostnames ccwcus-gpu-16
++ node_list=ccwcus-gpu-16
+++ format_hostnames 4 ccwcus-gpu-16
+++ local num_servers=4
+++ shift
+++ hosts=('ccwcus-gpu-16')
+++ local hosts
+++ local result=
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n '' ]]
+++ result+=ccwcus-gpu-16:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-16:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-16:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-16:30000,ccwcus-gpu-16:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-16:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-16:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ echo ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003
++ export endpoints=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003
++ endpoints=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003
++ export engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint
++ engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint
++ export container_workdir=/work
++ container_workdir=/work
++ export script_dir=/work/scripts/slurm_llm
++ script_dir=/work/scripts/slurm_llm
++ export actual_workdir=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA
++ actual_workdir=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA
++ export container_name_suffix=mlperf_inference
++ container_name_suffix=mlperf_inference
++ export container_mount=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts
++ container_mount=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts
++ export 'base_run_args=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint'
++ base_run_args='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint'
++ '[' trt == trt ']'
++ export 'base_run_args=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp'
++ base_run_args='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp'
++ export 'srun_header=srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root'
++ srun_header='srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root'
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --container-name=mlperf_inference-generate_engines --nodes=1 '--export=RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp,script_dir,SYSTEM_NAME' --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1863-generate_engines.txt --mpi=pmix /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make generate_engines'
+++ scontrol show hostnames ccwcus-gpu-16
++ node_list=ccwcus-gpu-16
++ export 'RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --server_in_foreground'
++ RUN_ARGS='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --server_in_foreground'
++ for node in $node_list
++ unset RUN_ARGS
++ export 'RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003  --test_mode=AccuracyOnly'
++ RUN_ARGS='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003  --test_mode=AccuracyOnly'
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-16 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1863-ccwcus-gpu-16-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --overlap --cpus-per-task=20 --container-name=mlperf_inference-run_harness_accuracy --nodes=1 --export=RUN_ARGS,script_dir,SYSTEM_NAME --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1863-run_harness_accuracy.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_harness'
+srun: error: ccwcus-gpu-16: task 1: Exited with exit code 2
+srun: error: ccwcus-gpu-16: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-16: task 4: Exited with exit code 2
+srun: error: ccwcus-gpu-16: task 3: Exited with exit code 2
+srun: error: ccwcus-gpu-16: task 5: Exited with exit code 2
+srun: error: ccwcus-gpu-16: task 2: Exited with exit code 2
++ export 'RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003  --test_mode=PerformanceOnly'
++ RUN_ARGS='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-16:30000,ccwcus-gpu-16:30001,ccwcus-gpu-16:30002,ccwcus-gpu-16:30003  --test_mode=PerformanceOnly'
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --overlap --container-name=mlperf_inference-run_harness_performance --nodes=1 --export=RUN_ARGS,script_dir,SYSTEM_NAME --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1863-run_harness_performance.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_harness'
+srun: error: Unable to create step for job 1863: Memory required by task is not available
++ srun --overlap --container-name=mlperf_inference-run_llm_server --ntasks-per-node=1 /bin/bash -c 'pkill -9 make'
+srun: error: Unable to create step for job 1863: Memory required by task is not available
++ wait
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1863 ON ccwcus-gpu-16 CANCELLED AT 2025-07-31T14:31:47 ***

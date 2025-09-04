@@ -1,0 +1,4 @@
+Downloading: "https://github.com/mseitzer/pytorch-fid/releases/download/fid_weights/pt_inception-2015-12-05-6726825d.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/pt_inception-2015-12-05-6726825d.pth
+Accuracy Results: {'FID_SCORE': '23.753057163893118', 'CLIP_SCORE': '31.79962874919176'}
+
+hash=81b9f96e69311397ebea94fc8d56c9be98157aa72f430fe59b6191708879824a

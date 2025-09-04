@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH --job-name=llama3_offline
+#SBATCH --output=llama3_offline_%j.out
+#SBATCH --error=llama3_offline_%j.err
+#SBATCH -p hpg-b200
+#SBATCH -A ufhpc
+#SBATCH --reservation=mlperf-b200
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=112
+#SBATCH --gres=gpu:8
+#SBATCH --time=02:00:00
+
+module purge
+module load cuda/12.9.1 apptainer/1.4.1
+
+# go to your container‐mount point
+cd /red/ufhpc/yanghong/mlperf/minh-container-5.1.4/closed/NVIDIA
+
+# clear any leftover SLURM/PMIx/OMPI env so the harness picks up ORCHESTRATOR mode
+unset SLURM_JOB_ID SLURM_NTASKS SLURM_PROCID SLURM_NNODES SLURM_JOB_NODELIST \
+      PMI_RANK PMI_SIZE OMPI_COMM_WORLD_RANK OMPI_COMM_WORLD_SIZE
+
+# run the entire 8‑GPU workload in one container process
+apptainer exec --nv --cleanenv \
+  --bind "${PWD}":/work \
+  --env MLPERF_SCRATCH_PATH=/red/ufhpc/yanghong/mlperf/scratch \
+  /red/rc-rse/mlperf/minh_mlperf/mlperf-nv-5.1.4-sandbox \
+  bash -lc "\
+    cd /work && \
+    make run_harness RUN_ARGS='--benchmarks=llama3_1-405b --scenarios=Offline' \
+  "
+

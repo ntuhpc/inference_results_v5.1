@@ -1,0 +1,16 @@
+cmake
+future
+pillow
+onnx
+onnxruntime
+openvino
+opencv-python-headless
+tensorflow
+Cython
+pycocotools
+torch
+torchvision
+boto3
+tqdm
+pandas
+pybind11

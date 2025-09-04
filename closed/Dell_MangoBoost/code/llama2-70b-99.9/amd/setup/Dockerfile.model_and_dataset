@@ -1,0 +1,33 @@
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /lab-mlperf-inference/setup/
+USER root
+
+RUN pip install \
+absl-py \
+datasets \
+evaluate \
+nltk \
+numpy==1.26.4 \
+py-libnuma \
+onnx==1.17.0 \
+onnxruntime==1.19.0 \
+rouge_score \
+transformers==4.46.3 \
+accelerate
+
+RUN curl https://rclone.org/install.sh | bash \
+&& rclone config create mlc-inference s3 provider=Cloudflare access_key_id=f65ba5eef400db161ea49967de89f47b secret_access_key=fbea333914c292b854f14d3fe232bad6c5407bf0ab1bebf78833c2b359bdfd2b endpoint=https://c2686074cb2caf5cbaf6d134bdba8b47.r2.cloudflarestorage.com
+
+ARG TOOLS_DIR
+COPY ${TOOLS_DIR}/amd_quark-0.8.0rc2/examples/torch/language_modeling .
+COPY ${TOOLS_DIR}/amd_quark-0.8.0rc2/amd_quark-0.8.0rc2-py3-none-any.whl .
+
+RUN pip install amd_quark-0.8.0rc2-py3-none-any.whl
+
+ARG SCRIPTS_DIR
+ADD ${SCRIPTS_DIR} .
+

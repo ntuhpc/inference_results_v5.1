@@ -1,0 +1,8 @@
+numpy
+openvino
+torch
+torchvision
+fastdownload
+rich
+scikit-learn
+nncf

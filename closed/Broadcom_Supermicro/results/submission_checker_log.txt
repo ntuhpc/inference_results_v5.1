@@ -1,0 +1,32 @@
+[2025-07-31 20:04:42,398 submission_checker.py:2412 ERROR] closed/Broadcom_Supermicro: has not calibration file. One of closed/Broadcom_Supermicro/calibration.md or closed/Broadcom_Supermicro/documentation/calibration.md is required
+[2025-07-31 20:04:42,401 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,402 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,402 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,403 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,403 submission_checker.py:1697 INFO] Target latency: None, Latency: 2701766214483, Scenario: Offline
+[2025-07-31 20:04:42,406 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,406 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,407 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,407 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 20:04:42,408 submission_checker.py:1678 INFO] Target latency: 60000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 20:04:42,408 submission_checker.py:3393 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3397 INFO] Results closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Offline 31062.7
+[2025-07-31 20:04:42,408 submission_checker.py:3397 INFO] Results closed/Broadcom_Supermicro/results/vSYS-422GA-NBRT-B200-SXM-180GBx8_TRT/deepseek-r1/Server 8079.92
+[2025-07-31 20:04:42,408 submission_checker.py:3399 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3402 ERROR] NoResults closed/Broadcom_Supermicro/results
+[2025-07-31 20:04:42,408 submission_checker.py:3488 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3489 INFO] Results=2, NoResults=1, Power Results=0
+[2025-07-31 20:04:42,408 submission_checker.py:3496 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3497 INFO] Closed Results=2, Closed Power Results=0
+
+[2025-07-31 20:04:42,408 submission_checker.py:3502 INFO] Open Results=0, Open Power Results=0
+
+[2025-07-31 20:04:42,408 submission_checker.py:3507 INFO] Network Results=0, Network Power Results=0
+
+[2025-07-31 20:04:42,408 submission_checker.py:3512 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3514 INFO] Systems=1, Power Systems=0
+[2025-07-31 20:04:42,408 submission_checker.py:3518 INFO] Closed Systems=1, Closed Power Systems=0
+[2025-07-31 20:04:42,408 submission_checker.py:3523 INFO] Open Systems=0, Open Power Systems=0
+[2025-07-31 20:04:42,408 submission_checker.py:3528 INFO] Network Systems=0, Network Power Systems=0
+[2025-07-31 20:04:42,408 submission_checker.py:3533 INFO] ---
+[2025-07-31 20:04:42,408 submission_checker.py:3535 ERROR] SUMMARY: submission has errors

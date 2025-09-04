@@ -1,0 +1,54 @@
+# Copyright 2024, MangoBoost, Inc. All rights reserved.
+
+
+# Use x- prefix for extension fields
+x-llmboost-dev: &llmboost-dev 
+  context: .
+  dockerfile: Dockerfile
+  target: dev
+
+x-llmboost-prod: &llmboost-prod 
+  context: .
+  dockerfile: Dockerfile
+  target: final
+
+services:
+
+  # Base environment
+  env-base: &env-base
+    image: hello-world
+    network_mode: host
+    ipc: host
+    privileged: true
+    volumes:
+      - ~/.cache/huggingface:/root/.cache/huggingface
+      - ./:/workspace
+      - /models:/models
+      - /models/models:/workspace/models
+
+  # ROCm environment
+  env-rocm: &env-rocm
+    <<: *env-base
+    image: rocm/dev-ubuntu-22.04:latest
+    group_add:
+      - video
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/kfd:/dev/kfd
+
+  prod-rocm-mlperf-5_1-multi-node-mi35x-final: &prod-rocm-mlperf-5_1-multi-node-mi35x-final
+    <<: *env-rocm
+    image: mb-llmboost-inference:prod-rocm-mlperf-5_1-multi-node-mi35x-final
+    build:
+      <<: *llmboost-prod
+      args:
+        - AMD_BASE_IMAGE=mangollm/tmp-upload-amd-mlperf-5_1:2025-07-21
+        - LLMBOOST_BASE_IMAGE=llmboost/mb-llmboost:mlperf-5_1-multi-node-mi35x-base
+        - PLATFORM=rocm
+        - PYVER=3.10 # Python version of the base image
+    volumes:  # Override volumes here
+      - /workspace/  # Create an empty directory inside the container

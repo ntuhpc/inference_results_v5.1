@@ -1,0 +1,11 @@
+User Conf path: /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/01b6c90e772749458c548befd35e2fff.conf
+Dataset Preprocessed path: /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_94d0d05f
+Dataset List filepath: 
+Scenario: SingleStream
+Mode: PerformanceOnly
+Batch size: 1
+Query count override: 0
+Performance sample count override in application: 0
+loaded imagenet with 50000 samples
+starting benchmark
+loading samples to ram with total sample size: 1024

@@ -1,0 +1,15 @@
+system_name: macbook_m1pro          
+
+hw:                                 
+  soc: Apple M1 Pro
+  cpu_cores: 10
+  gpu_cores: 16
+  npu_cores: 16          
+  memory: 16 GB unified
+
+sw:                                  
+  os: macOS 14.x
+  python: 3.11
+  onnxruntime: 1.22.1               
+  mlcflow: 0.9.x                    
+  inference_git: 6ad8e26f       

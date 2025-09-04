@@ -1,0 +1,37 @@
+python3 python/main.py --profile resnet50-tf --model "/home/mlcuser/MLC/repos/local/cache/download-file_ml-model-resnet_b9598236/resnet50_v1.pb" --dataset-path /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ac1f5d52 --output "/home/mlcuser/results_dir/valid_results/58893e86cf65-reference-cpu-tf-v2.19.0-default_config/resnet50/offline/performance/run_1" --scenario Offline --threads 32 --user_conf /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e1e48dbbf6a64158a0e45ba0b4dcc80f.conf --use_preprocessed_dataset --cache_dir /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ac1f5d52 --dataset-list /home/mlcuser/MLC/repos/local/cache/extract-file_imagenet-aux-da_7f1276a4/val.txt
+INFO:main:Namespace(dataset='imagenet', dataset_path='/home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ac1f5d52', dataset_list='/home/mlcuser/MLC/repos/local/cache/extract-file_imagenet-aux-da_7f1276a4/val.txt', data_format=None, profile='resnet50-tf', scenario='Offline', max_batchsize=32, model='/home/mlcuser/MLC/repos/local/cache/download-file_ml-model-resnet_b9598236/resnet50_v1.pb', output='/home/mlcuser/results_dir/valid_results/58893e86cf65-reference-cpu-tf-v2.19.0-default_config/resnet50/offline/performance/run_1', inputs=['input_tensor:0'], outputs=['ArgMax:0'], backend='tensorflow', device=None, model_name='resnet50', threads=32, qps=None, cache=0, cache_dir='/home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_ac1f5d52', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=False, find_peak_performance=False, debug=False, user_conf='/home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/e1e48dbbf6a64158a0e45ba0b4dcc80f.conf', audit_conf='audit.config', time=None, count=None, performance_sample_count=None, max_latency=None, samples_per_query=8)
+2025-08-01 19:00:17.011581: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-08-01 19:00:17.020216: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1754074817.028930  185790 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1754074817.031727  185790 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1754074817.039315  185790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754074817.039324  185790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754074817.039325  185790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754074817.039325  185790 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-08-01 19:00:17.041798: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:imagenet:Loading 50000 preprocessed images using 32 threads
+INFO:imagenet:loaded 50000 images, cache=0, already_preprocessed=True, took=0.3sec
+WARNING:tensorflow:From /home/mlcuser/MLC/repos/local/cache/get-git-repo_inference-src_da8b6d54/inference/vision/classification_and_detection/python/backend_tf.py:55: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+WARNING:tensorflow:From /home/mlcuser/venv/mlc/lib/python3.10/site-packages/tensorflow/python/tools/strip_unused_lib.py:84: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+WARNING:tensorflow:From /home/mlcuser/venv/mlc/lib/python3.10/site-packages/tensorflow/python/tools/optimize_for_inference_lib.py:138: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+2025-08-01 19:00:44.844648: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2025-08-01 19:00:44.844666: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:167] env: CUDA_VISIBLE_DEVICES=""
+2025-08-01 19:00:44.844670: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:170] CUDA_VISIBLE_DEVICES is set to an empty string - this hides all GPUs from CUDA
+2025-08-01 19:00:44.844672: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:178] verbose logging is disabled. Rerun with verbose logging (usually --v=1 or --vmodule=cuda_diagnostics=1) to get more diagnostic output from this module
+2025-08-01 19:00:44.844674: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:183] retrieving CUDA diagnostic information for host: 58893e86cf65
+2025-08-01 19:00:44.844676: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:190] hostname: 58893e86cf65
+2025-08-01 19:00:44.844788: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:197] libcuda reported version is: 570.169.0
+2025-08-01 19:00:44.844798: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:201] kernel reported version is: 570.169.0
+2025-08-01 19:00:44.844799: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:291] kernel version seems to match DSO: 570.169.0
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1754074844.969929  185790 mlir_graph_optimization_pass.cc:425] MLIR V1 optimization pass is not enabled
+INFO:main:starting TestScenario.Offline
+TestScenario.Offline qps=7.15, mean=22.1093, time=617.023, queries=4410, tiles=50.0:22.1464,80.0:24.1549,90.0:25.2672,95.0:26.2398,99.0:28.1160,99.9:29.8173

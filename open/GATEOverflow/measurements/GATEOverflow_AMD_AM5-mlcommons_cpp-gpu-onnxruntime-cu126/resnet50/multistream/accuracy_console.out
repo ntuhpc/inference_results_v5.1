@@ -1,0 +1,59 @@
+User Conf path: /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/5b8c23f8d2814dbda1c8ca044a710819.conf
+Dataset Preprocessed path: /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_94d0d05f
+Dataset List filepath: 
+Scenario: MultiStream
+Mode: AccuracyOnly
+Batch size: 8
+Query count override: 0
+Performance sample count override in application: 0
+loaded imagenet with 50000 samples
+starting benchmark
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 1031
+loading samples to ram with total sample size: 855

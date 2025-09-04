@@ -1,0 +1,143 @@
+[2025-07-15 07:56:17,395 main.py:237 INFO] Detected system ID: Nvidia_2c86eb58c6bc
+[2025-07-15 07:56:17,412 harness.py:241 INFO] The harness will load 3 plugins: ['build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so', 'build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so', 'build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so']
+[2025-07-15 07:56:17,412 generate_conf_files.py:107 INFO] Generated measurements/ entries for Nvidia_2c86eb58c6bc_TRT/3d-unet-99/SingleStream
+[2025-07-15 07:56:17,412 harness.py:357 INFO] Using harness launch command...
+[2025-07-15 07:56:17,412 __init__.py:46 INFO] Running command: ./build/bin/harness_3dunet --plugins="build/plugins/pixelShuffle3DPlugin/libpixelshuffle3dplugin.so,build/plugins/conv3D1X1X1K4Plugin/libconv3D1X1X1K4Plugin.so,build/plugins/conv3D3X3X3C1K32Plugin/libconv3D3X3X3C1K32Plugin.so" --logfile_outdir="/home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-results-dir_94a235cb/valid_results/2c86eb58c6bc-nvidia_original-gpu-tensorrt-vdefault-default_config/3d-unet-99/singlestream/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=43 --test_mode="PerformanceOnly" --gpu_copy_streams=1 --gpu_inference_streams=1 --use_deque_limit=true --gpu_batch_size=1 --map_path="data_maps/kits19/val_map.txt" --mlperf_conf_path="/home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf" --tensor_path="build/preprocessed_data/KiTS19/inference/int8" --use_graphs=false --user_conf_path="/home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d91571d865704091b0b21c3c829e8d6f.conf" --unet3d_sw_gaussian_patch_path="/home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/preprocessed_data/KiTS19/etc/gaussian_patches.npy" --gpu_engines="./build/engines/Nvidia_2c86eb58c6bc/3d-unet/SingleStream/3d-unet-SingleStream-gpu-3d-unet-b1-int8.custom_k_99_MaxP.plan" --max_dlas=0 --slice_overlap_patch_kernel_cg_impl=false --scenario="SingleStream" --model="3d-unet" --scenario SingleStream --model 3d-unet
+[2025-07-15 07:56:17,412 __init__.py:53 INFO] Overriding Environment
+benchmark : Benchmark.UNET3D
+buffer_manager_thread_count : 0
+data_dir : /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/data
+gpu_batch_size : 1
+gpu_copy_streams : 1
+gpu_inference_streams : 1
+input_dtype : int8
+input_format : linear
+log_dir : /home/ubuntu/MLC/repos/local/cache/get-git-repo_mlperf-inferenc_2b08c1b6/repo/closed/NVIDIA/build/logs/2025.07.15-07.56.14
+map_path : data_maps/kits19/val_map.txt
+mlperf_conf_path : /home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf
+precision : int8
+preprocessed_data_dir : /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/preprocessed_data
+scenario : Scenario.SingleStream
+single_stream_expected_latency_ns : 0
+slice_overlap_patch_kernel_cg_impl : False
+system : System(cpu=CPU(name='Intel(R) Xeon(R) w7-2495X', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, vendor='GenuineIntel', cores_per_group=24, threads_per_core=2, n_groups=1, group_type=<GroupType.Socket: 'socket'>, numa_nodes=[[Interval(start=0, end=47)]], flags={'sse4_2', 'cx16', 'cldemote', 'cat_l3', 'fxsr', 'arat', 'popcnt', 'adx', 'bus_lock_detect', 'pat', 'constant_tsc', 'pae', 'tm2', 'ibrs_enhanced', 'cmov', 'invpcid', 'avx512f', 'smx', 'clwb', 'mba', 'acpi', 'movdir64b', 'pdcm', 'cx8', 'ept', 'f16c', 'amx_tile', 'avx2', 'movbe', 'ida', 'cdp_l2', 'monitor', 'sse2', 'cqm_llc', 'vmx', 'mce', 'sse', 'syscall', 'avx512ifma', 'amx_bf16', 'avx512_vpopcntdq', 'ibt', 'rdrand', 'md_clear', 'pni', 'fma', 'clflushopt', 'intel_pt', 'dts', 'sha_ni', 'avx512bw', 'lahf_lm', 'msr', 'avx', 'ospke', 'apic', 'xtopology', 'tsc', 'sdbg', 'ht', 'arch_capabilities', 'pse36', 'hwp', 'cpuid_fault', 'sep', 'ds_cpl', 'avx_vnni', 'abm', 'vme', 'xsaves', 'flexpriority', 'cqm_mbm_total', 'hwp_pkg_req', 'vaes', 'enqcmd', 'tpr_shadow', 'pebs', 'mca', 'tsc_adjust', 'cqm', 'dtes64', 'epb', 'rdpid', 'rdtscp', 'bts', 'nopl', 'ssse3', 'smap', 'avx512cd', 'pcid', 'dtherm', 'ibrs', 'art', 'vpclmulqdq', 'tsc_known_freq', 'pbe', 'nonstop_tsc', 'gfni', 'flush_l1d', 'hwp_epp', 'bmi1', 'avx512dq', 'mtrr', 'umip', 'est', '3dnowprefetch', 'smep', 'xsavec', 'fpu', 'avx512_bf16', 'pts', 'xgetbv1', 'tsxldtrk', 'pge', 'x2apic', 'aperfmperf', 'wbnoinvd', 'rdseed', 'avx512_bitalg', 'pconfig', 'waitpkg', 'rep_good', 'intel_ppin', 'arch_perfmon', 'avx512vbmi', 'vnmi', 'hwp_act_window', 'amx_int8', 'lm', 'movdiri', 'erms', 'split_lock_detect', 'cqm_mbm_local', 'xtpr', 'nx', 'xsaveopt', 'aes', 'tsc_deadline_timer', 'xsave', 'ept_ad', 'dca', 'vpid', 'de', 'fsgsbase', 'serialize', 'ss', 'pln', 'arch_lbr', 'cpuid', 'avx512_vnni', 'pku', 'la57', 'pse', 'bmi2', 'tm', 'cqm_occup_llc', 'rdt_a', 'avx512_vbmi2', 'avx512_fp16', 'pclmulqdq', 'sse4_1', 'pdpe1gb', 'cat_l2', 'clflush', 'mmx', 'ibpb', 'avx512vl', 'stibp', 'fsrm', 'user_shstk', 'ssbd', 'cdp_l3'}, vulnerabilities={'spec store bypass': 'Mitigation; Speculative Store Bypass disabled via prctl', 'spectre v1': 'Mitigation; usercopy/swapgs barriers and __user pointer sanitization', 'spectre v2': 'Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S'}), host_memory=HostMemory(capacity=Memory(quantity=197.333724, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=197333724000)), accelerators={<class 'nvmitten.nvidia.accelerator.GPU'>: [GPU(name='NVIDIA GeForce RTX 4090', pci_id='0x268410DE', compute_sm=ComputeSM(major=8, minor=9), vram=Memory(quantity=23.64288330078125, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25386352640), max_power_limit=450.0, is_integrated=False, gpu_index=0), GPU(name='NVIDIA GeForce RTX 4090', pci_id='0x268410DE', compute_sm=ComputeSM(major=8, minor=9), vram=Memory(quantity=23.64019775390625, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25383469056), max_power_limit=500.0, is_integrated=False, gpu_index=1)], <class 'nvmitten.nvidia.accelerator.DLA'>: []}, extras={'id': 'Nvidia_2c86eb58c6bc', 'tags': {'is_ampere', 'is_ada', 'custom', 'gpu_based', 'multi_gpu'}, 'name': 'Nvidia_2c86eb58c6bc', 'primary_compute_sm': ComputeSM(major=8, minor=9)})
+tensor_path : build/preprocessed_data/KiTS19/inference/int8
+test_mode : PerformanceOnly
+unet3d_sw_gaussian_patch_path : /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/preprocessed_data/KiTS19/etc/gaussian_patches.npy
+use_deque_limit : True
+use_graphs : False
+user_conf_path : /home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d91571d865704091b0b21c3c829e8d6f.conf
+system_id : Nvidia_2c86eb58c6bc
+config_name : Nvidia_2c86eb58c6bc_3d-unet_SingleStream
+workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+optimization_level : plugin-enabled
+num_profiles : 1
+config_ver : custom_k_99_MaxP
+accuracy_level : 99%
+inference_server : custom
+skip_file_checks : False
+power_limit : None
+cpu_freq : None
+gpu_engine_batch_size : 1
+&&&& RUNNING MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
+[I] mlperf.conf path: /home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf
+[I] user.conf path: /home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/d91571d865704091b0b21c3c829e8d6f.conf
+Creating QSL.
+Finished Creating QSL.
+Setting up SUT.
+[I] [TRT] Loaded engine size: 31 MiB
+[I] Device:0: ./build/engines/Nvidia_2c86eb58c6bc/3d-unet/SingleStream/3d-unet-SingleStream-gpu-3d-unet-b1-int8.custom_k_99_MaxP.plan has been successfully loaded.
+[I] [TRT] Loaded engine size: 31 MiB
+[W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[I] Device:1: ./build/engines/Nvidia_2c86eb58c6bc/3d-unet/SingleStream/3d-unet-SingleStream-gpu-3d-unet-b1-int8.custom_k_99_MaxP.plan has been successfully loaded.
+[W] [TRT] hasImplicitBatchDimension is deprecated and always return false.
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +278, now: CPU 0, GPU 337 (MiB)
+[W] [TRT] hasImplicitBatchDimension is deprecated and always return false.
+[W] [TRT] hasImplicitBatchDimension is deprecated and always return false.
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +277, now: CPU 0, GPU 614 (MiB)
+[W] [TRT] hasImplicitBatchDimension is deprecated and always return false.
+[I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: true
+[I] Creating batcher thread: 1 EnableBatcherThreadPerDevice: true
+Finished setting up SUT.
+Starting warmup. Running for a minimum of 5 seconds.
+Finished warmup. Ran for 5.05104s.
+Starting running actual test.
+================================================
+MLPerf Results Summary
+================================================
+SUT name : Server_3DUNet
+Scenario : SingleStream
+Mode     : PerformanceOnly
+90.0th percentile latency (ns) : 428442394
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+Early Stopping Result:
+ * Processed at least 64 queries (6063).
+ * Would discard 551 highest latency queries.
+ * Early stopping 90.0th percentile estimate: 428835421
+ * Early stopping 99.0th percentile estimate: 495390792
+
+================================================
+Additional Stats
+================================================
+QPS w/ loadgen overhead         : 4.53
+QPS w/o loadgen overhead        : 4.53
+
+Min latency (ns)                : 28029840
+Max latency (ns)                : 504917892
+Mean latency (ns)               : 220766278
+50.00 percentile latency (ns)   : 172430031
+90.00 percentile latency (ns)   : 428442394
+95.00 percentile latency (ns)   : 492643598
+97.00 percentile latency (ns)   : 493413630
+99.00 percentile latency (ns)   : 495095992
+99.90 percentile latency (ns)   : 497213906
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 1
+target_qps : 5.02399
+target_latency (ns): 0
+max_async_queries : 1
+min_duration (ms): 600000
+max_duration (ms): 0
+min_query_count : 6063
+max_query_count : 0
+qsl_rng_seed : 1780908523862526354
+sample_index_rng_seed : 14771362308971278857
+schedule_rng_seed : 18209322760996052031
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 43
+WARNING: sample_concatenate_permutation was set to true. 
+Generated samples per query might be different as the one in the setting.
+Check the generated_samples_per_query line in the detailed log for the real
+samples_per_query value
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Finished running actual test.
+Device Device:0 processed:
+  185636 batches of size 1
+  Memcpy Calls: 0
+  PerSampleCudaMemcpy Calls: 2897
+  BatchedCudaMemcpy Calls: 0
+Device Device:1 processed:
+  203665 batches of size 1
+  Memcpy Calls: 0
+  PerSampleCudaMemcpy Calls: 3166
+  BatchedCudaMemcpy Calls: 0
+&&&& PASSED MLPerf_Inference_3DUNet_Harness # ./build/bin/harness_3dunet
+[2025-07-15 08:18:43,537 run_harness.py:170 INFO] Result: result_90.00_percentile_latency_ns: 428442394, Result is VALID, 10-min runtime requirement met: True
+ 
+======================== Result summaries: ========================
+

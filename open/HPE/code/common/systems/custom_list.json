@@ -1,0 +1,1501 @@
+{
+  "HPE_Cray_XD670_H200_SXM_141GBx8": {
+    "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+    "data": {
+      "_component_module": "nvmitten.system.system",
+      "_component_classname": "System",
+      "_match_ignore_fields": [],
+      "fields": {
+        "cpu": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.cpu",
+            "_component_classname": "CPU",
+            "_match_ignore_fields": [],
+            "fields": {
+              "architecture": {
+                "__ENUM__": [
+                  "nvmitten.constants",
+                  "CPUArchitecture"
+                ],
+                "name": "x86_64"
+              },
+              "vendor": "GenuineIntel"
+            }
+          }
+        },
+        "accelerators": {
+          "__obj_class__": "<class 'nvmitten.json_utils.ClassKeyedDict'>",
+          "data": [
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "GPU",
+              "value": [
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233510DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150021734400,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.72 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "DLA",
+              "value": []
+            }
+          ]
+        },
+        "extras": {
+          "id": "HPE_Cray_XD670_H200_SXM_141GBx8",
+          "tags": {
+            "__SET__": [
+              "start_from_device_enabled",
+              "gpu_based",
+              "end_on_device_enabled",
+              "is_hopper",
+              "multi_gpu"
+            ]
+          },
+          "name": "HPE_Cray_XD670_H200_SXM_141GBx8",
+          "primary_compute_sm": {
+            "__obj_class__": "<class 'nvmitten.nvidia.constants.ComputeSM'>",
+            "data": 90
+          }
+        }
+      }
+    }
+  },
+  "HPE_Cray_XD670_H100_SXM_80GBx8": {
+    "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+    "data": {
+      "_component_module": "nvmitten.system.system",
+      "_component_classname": "System",
+      "_match_ignore_fields": [],
+      "fields": {
+        "cpu": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.cpu",
+            "_component_classname": "CPU",
+            "_match_ignore_fields": [],
+            "fields": {
+              "architecture": {
+                "__ENUM__": [
+                  "nvmitten.constants",
+                  "CPUArchitecture"
+                ],
+                "name": "x86_64"
+              },
+              "vendor": "GenuineIntel"
+            }
+          }
+        },
+        "accelerators": {
+          "__obj_class__": "<class 'nvmitten.json_utils.ClassKeyedDict'>",
+          "data": [
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "GPU",
+              "value": [
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233010DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 85049802752,
+                              "base": 1024,
+                              "human_readable_UNUSED": "79.21 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 700.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "DLA",
+              "value": []
+            }
+          ]
+        },
+        "extras": {
+          "id": "DGX-H100_H100-SXM-80GBx8",
+          "tags": {
+            "__SET__": [
+              "start_from_device_enabled",
+              "gpu_based",
+              "end_on_device_enabled",
+              "is_hopper",
+              "multi_gpu"
+            ]
+          },
+          "name": "H100_SXM_80GBx8",
+          "primary_compute_sm": {
+            "__obj_class__": "<class 'nvmitten.nvidia.constants.ComputeSM'>",
+            "data": 90
+          }
+        }
+      }
+    }
+  },
+  "HPE_ProLiant_DL380a_L40S_PCIe_48GBx8": {
+    "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+    "data": {
+      "_component_module": "nvmitten.system.system",
+      "_component_classname": "System",
+      "_match_ignore_fields": [],
+      "fields": {
+        "cpu": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.cpu",
+            "_component_classname": "CPU",
+            "_match_ignore_fields": [],
+            "fields": {
+              "architecture": {
+                "__ENUM__": [
+                  "nvmitten.constants",
+                  "CPUArchitecture"
+                ],
+                "name": "x86_64"
+              },
+              "vendor": "GenuineIntel"
+            }
+          }
+        },
+        "host_memory": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.memory",
+            "_component_classname": "HostMemory",
+            "_match_ignore_fields": [],
+            "fields": {
+              "capacity": {
+                "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                "data": {
+                  "num_bytes": 1056551140000,
+                  "base": 1000,
+                  "human_readable_UNUSED": "1.06 TB"
+                }
+              }
+            }
+          }
+        },
+        "accelerators": {
+          "__obj_class__": "<class 'nvmitten.json_utils.ClassKeyedDict'>",
+          "data": [
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "GPU",
+              "value": [
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x26B910DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 47677177856,
+                              "base": 1024,
+                              "human_readable_UNUSED": "44.40 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 350.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "DLA",
+              "value": []
+            }
+          ]
+        },
+        "extras": {}
+      }
+    }
+  },
+  "HPE_PROLIANT_DL380A_H200_NVL_141GBX8": {
+    "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+    "data": {
+      "_component_module": "nvmitten.system.system",
+      "_component_classname": "System",
+      "_match_ignore_fields": [],
+      "fields": {
+        "cpu": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.cpu",
+            "_component_classname": "CPU",
+            "_match_ignore_fields": [],
+            "fields": {
+              "architecture": {
+                "__ENUM__": [
+                  "nvmitten.constants",
+                  "CPUArchitecture"
+                ],
+                "name": "x86_64"
+              },
+              "vendor": "GenuineIntel"
+            }
+          }
+        },
+        "host_memory": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.memory",
+            "_component_classname": "HostMemory",
+            "_match_ignore_fields": [],
+            "fields": {
+              "capacity": {
+                "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                "data": {
+                  "num_bytes": 3170480400000,
+                  "base": 1000,
+                  "human_readable_UNUSED": "3.17 TB"
+                }
+              }
+            }
+          }
+        },
+        "accelerators": {
+          "__obj_class__": "<class 'nvmitten.json_utils.ClassKeyedDict'>",
+          "data": [
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "GPU",
+              "value": [
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x233B10DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 150121545728,
+                              "base": 1024,
+                              "human_readable_UNUSED": "139.81 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 600.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "DLA",
+              "value": []
+            }
+          ]
+        },
+        "extras": {}
+      }
+    }
+  },
+  "HPE_Hawks_3200_H100_NVL_94GBx4": {
+    "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+    "data": {
+      "_component_module": "nvmitten.system.system",
+      "_component_classname": "System",
+      "_match_ignore_fields": [],
+      "fields": {
+        "cpu": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.cpu",
+            "_component_classname": "CPU",
+            "_match_ignore_fields": [],
+            "fields": {
+              "architecture": {
+                "__ENUM__": [
+                  "nvmitten.constants",
+                  "CPUArchitecture"
+                ],
+                "name": "x86_64"
+              },
+              "vendor": "GenuineIntel"
+            }
+          }
+        },
+        "host_memory": {
+          "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+          "data": {
+            "_component_module": "nvmitten.system.memory",
+            "_component_classname": "HostMemory",
+            "_match_ignore_fields": [],
+            "fields": {
+              "capacity": {
+                "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                "data": {
+                  "num_bytes": 1038967776000,
+                  "base": 1000,
+                  "human_readable_UNUSED": "1.04 TB"
+                }
+              }
+            }
+          }
+        },
+        "accelerators": {
+          "__obj_class__": "<class 'nvmitten.json_utils.ClassKeyedDict'>",
+          "data": [
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "GPU",
+              "value": [
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x232110DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 99861463040,
+                              "base": 1024,
+                              "human_readable_UNUSED": "93.00 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 400.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x232110DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 99861463040,
+                              "base": 1024,
+                              "human_readable_UNUSED": "93.00 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 400.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x232110DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 99861463040,
+                              "base": 1024,
+                              "human_readable_UNUSED": "93.00 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 400.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                },
+                {
+                  "__obj_class__": "<class 'nvmitten.system.component.Description'>",
+                  "data": {
+                    "_component_module": "nvmitten.nvidia.accelerator",
+                    "_component_classname": "GPU",
+                    "_match_ignore_fields": [],
+                    "fields": {
+                      "pci_id": "0x232110DE",
+                      "vram": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": {
+                            "__obj_class__": "<class 'nvmitten.memory.Memory'>",
+                            "data": {
+                              "num_bytes": 99861463040,
+                              "base": 1024,
+                              "human_readable_UNUSED": "93.00 GiB"
+                            }
+                          },
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "max_power_limit": {
+                        "__obj_class__": "<class 'nvmitten.interval.NumericRange'>",
+                        "data": {
+                          "start": 400.0,
+                          "rel_tol": 0.05
+                        }
+                      },
+                      "is_integrated": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key.module": "nvmitten.nvidia.accelerator",
+              "key.name": "DLA",
+              "value": []
+            }
+          ]
+        },
+        "extras": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+numpy
+pyre_extensions
+scikit-learn
+torch
+torchsnapshot
+torchrec==0.6.0
+fbgemm_gpu==1.0.0

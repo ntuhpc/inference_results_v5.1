@@ -1,0 +1,107 @@
+# Generated file by scripts/custom_systems/add_custom_system.py
+# Contains configs for all custom systems in code/common/systems/custom_list.json
+
+from . import *
+
+
+@ConfigRegistry.register(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+class DGX-H100_H100-SXM-80GBX8(ServerGPUBaseConfig):
+    system = KnownSystem.DGX-H100_H100-SXM-80GBx8
+
+    # Applicable fields for this benchmark are listed below. Not all of these are necessary, and some may be defined in the BaseConfig already and inherited.
+    # Please see NVIDIA's submission config files for example values and which fields to keep.
+    # Required fields (Must be set or inherited to run):
+    gpu_batch_size: Dict = {}
+    tensor_path: str = ''
+    trtllm_build_flags: parse_cli_flags = {}
+    trtllm_checkpoint_flags: parse_cli_flags = {}
+    trtllm_runtime_flags: parse_cli_flags = {}
+
+    # Optional fields:
+    active_sms: int = 0
+    cache_file: str = ''
+    checkpoint_dir: str = ''
+    enable_sort: bool = False
+    engine_dir: str = ''
+    llm_gen_config_path: str = ''
+    schedule_rng_seed: int = 0
+    server_num_issue_query_threads: int = 0
+    server_target_latency_ns: int = 0
+    server_target_latency_percentile: float = 0.0
+    server_target_qps: float = 0.0
+    server_target_qps_adj_factor: float = 0.0
+    start_from_device: bool = False
+    use_token_latencies: bool = False
+    vboost_slider: int = 0
+    workspace_size: int = 0
+
+
+# Generated file by scripts/custom_systems/add_custom_system.py
+# Contains configs for all custom systems in code/common/systems/custom_list.json
+
+from . import *
+
+
+@ConfigRegistry.register(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+class DGX-H100_H100-SXM-80GBX8(ServerGPUBaseConfig):
+    system = KnownSystem.DGX-H100_H100-SXM-80GBx8
+
+    # Applicable fields for this benchmark are listed below. Not all of these are necessary, and some may be defined in the BaseConfig already and inherited.
+    # Please see NVIDIA's submission config files for example values and which fields to keep.
+    # Required fields (Must be set or inherited to run):
+    gpu_batch_size: Dict = {}
+    tensor_path: str = ''
+    trtllm_build_flags: parse_cli_flags = {}
+    trtllm_checkpoint_flags: parse_cli_flags = {}
+    trtllm_runtime_flags: parse_cli_flags = {}
+
+    # Optional fields:
+    active_sms: int = 0
+    cache_file: str = ''
+    checkpoint_dir: str = ''
+    enable_sort: bool = False
+    engine_dir: str = ''
+    llm_gen_config_path: str = ''
+    schedule_rng_seed: int = 0
+    server_num_issue_query_threads: int = 0
+    server_target_latency_ns: int = 0
+    server_target_latency_percentile: float = 0.0
+    server_target_qps: float = 0.0
+    server_target_qps_adj_factor: float = 0.0
+    start_from_device: bool = False
+    use_token_latencies: bool = False
+    vboost_slider: int = 0
+    workspace_size: int = 0
+
+
+@ConfigRegistry.register(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+class DGX_H200_H200_PCIE_80GBX8(ServerGPUBaseConfig):
+    system = KnownSystem.DGX_H200_H200_PCIe_80GBx8
+
+    # Applicable fields for this benchmark are listed below. Not all of these are necessary, and some may be defined in the BaseConfig already and inherited.
+    # Please see NVIDIA's submission config files for example values and which fields to keep.
+    # Required fields (Must be set or inherited to run):
+    gpu_batch_size: Dict = {}
+    tensor_path: str = ''
+    trtllm_build_flags: parse_cli_flags = {}
+    trtllm_checkpoint_flags: parse_cli_flags = {}
+    trtllm_runtime_flags: parse_cli_flags = {}
+
+    # Optional fields:
+    active_sms: int = 0
+    cache_file: str = ''
+    checkpoint_dir: str = ''
+    enable_sort: bool = False
+    engine_dir: str = ''
+    llm_gen_config_path: str = ''
+    schedule_rng_seed: int = 0
+    server_num_issue_query_threads: int = 0
+    server_target_latency_ns: int = 0
+    server_target_latency_percentile: float = 0.0
+    server_target_qps: float = 0.0
+    server_target_qps_adj_factor: float = 0.0
+    use_token_latencies: bool = False
+    vboost_slider: int = 0
+    workspace_size: int = 0
+
+

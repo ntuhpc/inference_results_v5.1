@@ -1,0 +1,227 @@
+INFO 07-31 05:27:24 [__init__.py:244] Automatically detected platform rocm.
+2025-07-31 05:27:26 INFO     mp.get_context:<multiprocessing.context.SpawnContext object at 0x7ffff7a75ca0>
+2025-07-31 05:27:26 WARNING  Overriding default sample count with 3000
+2025-07-31 05:27:26 WARNING  Overriding default duration with 1000 ms
+env_config={'HARNESS_DISABLE_VLLM_LOGS': 1, 'HARNESS_GC_LIMIT': 100000, 'HIP_FORCE_DEV_KERNARG': 1, 'VLLM_LOGGING_LEVEL': 'ERROR', 'VLLM_USE_TRITON_FLASH_ATTN': 0, 'VLLM_FP8_PADDING': 1, 'VLLM_FP8_ACT_PADDING': 1, 'VLLM_FP8_WEIGHT_PADDING': 1, 'VLLM_FP8_REDUCE_CONV': 1, 'VLLM_SCHED_PREFILL_KVC_FREEPCT': 30.0, 'VLLM_ENGINE_ITERATION_TIMEOUT_S': 36000, 'VLLM_USE_V1': 0, 'VLLM_LLAMA2_MLPERF_SCHED': 1, 'VLLM_LLAMA2_MLPERF_MAX_TARGET_DECODE_BATCH': 2048, 'VLLM_LLAMA2_MLPERF_MIN_TARGET_DECODE_BATCH': 2048, 'VLLM_LLAMA2_MLPERF_STEP_DECODE_BATCH': 256, 'VLLM_MLPERF_SWIZZLE_FP8_LINEAR': 1}
+2025-07-31 05:27:33 INFO     Setting HARNESS_DISABLE_VLLM_LOGS to 1
+2025-07-31 05:27:33 INFO     Setting HARNESS_GC_LIMIT to 100000
+2025-07-31 05:27:33 INFO     Setting HIP_FORCE_DEV_KERNARG to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_LOGGING_LEVEL to ERROR
+2025-07-31 05:27:33 INFO     Setting VLLM_USE_TRITON_FLASH_ATTN to 0
+2025-07-31 05:27:33 INFO     Setting VLLM_FP8_PADDING to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_FP8_ACT_PADDING to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_FP8_WEIGHT_PADDING to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_FP8_REDUCE_CONV to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_SCHED_PREFILL_KVC_FREEPCT to 30.0
+2025-07-31 05:27:33 INFO     Setting VLLM_ENGINE_ITERATION_TIMEOUT_S to 36000
+2025-07-31 05:27:33 INFO     Setting VLLM_USE_V1 to 0
+2025-07-31 05:27:33 INFO     Setting VLLM_LLAMA2_MLPERF_SCHED to 1
+2025-07-31 05:27:33 INFO     Setting VLLM_LLAMA2_MLPERF_MAX_TARGET_DECODE_BATCH to 2048
+2025-07-31 05:27:33 INFO     Setting VLLM_LLAMA2_MLPERF_MIN_TARGET_DECODE_BATCH to 2048
+2025-07-31 05:27:33 INFO     Setting VLLM_LLAMA2_MLPERF_STEP_DECODE_BATCH to 256
+2025-07-31 05:27:33 INFO     Setting VLLM_MLPERF_SWIZZLE_FP8_LINEAR to 1
+2025-07-31 05:27:33 INFO     Init Offline SUT
+2025-07-31 05:27:33 INFO     Init SUT
+2025-07-31 05:27:33 INFO     Loading dataset...
+2025-07-31 05:27:34 INFO     Finished loading dataset.
+2025-07-31 05:27:34 INFO     Instantiating SUT
+2025-07-31 05:27:34 INFO     SUT start
+2025-07-31 05:27:34 INFO     llm_config={'model': '/model/llama2-70b-chat-hf/fp8_quantized', 'dtype': 'float16', 'kv_cache_dtype': 'fp8', 'quantization': 'fp8', 'pipeline_parallel_size': 1, 'tensor_parallel_size': 1, 'gpu_memory_utilization': 0.98, 'max_model_len': 2048, 'swap_space': 0, 'block_size': 32, 'num_scheduler_steps': 7, 'enforce_eager': True, 'max_seq_len_to_capture': 2048, 'max_num_batched_tokens': 65536, 'max_num_seqs': 2700, 'disable_custom_all_reduce': True, 'disable_log_stats': True, 'enable_chunked_prefill': False, 'enable_prefix_caching': False}
+2025-07-31 05:27:39 INFO     GPU: 0
+2025-07-31 05:27:39 INFO     Nearest nodes = [1]
+Loading safetensors checkpoint shards:   0% Completed | 0/15 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   7% Completed | 1/15 [00:01<00:18,  1.35s/it]
+Loading safetensors checkpoint shards:  13% Completed | 2/15 [00:03<00:22,  1.76s/it]
+Loading safetensors checkpoint shards:  20% Completed | 3/15 [00:05<00:21,  1.82s/it]
+Loading safetensors checkpoint shards:  27% Completed | 4/15 [00:07<00:20,  1.83s/it]
+Loading safetensors checkpoint shards:  33% Completed | 5/15 [00:09<00:18,  1.86s/it]
+Loading safetensors checkpoint shards:  40% Completed | 6/15 [00:10<00:16,  1.86s/it]
+Loading safetensors checkpoint shards:  47% Completed | 7/15 [00:12<00:15,  1.92s/it]
+Loading safetensors checkpoint shards:  53% Completed | 8/15 [00:14<00:13,  1.89s/it]
+Loading safetensors checkpoint shards:  60% Completed | 9/15 [00:16<00:11,  1.88s/it]
+Loading safetensors checkpoint shards:  67% Completed | 10/15 [00:17<00:07,  1.49s/it]
+Loading safetensors checkpoint shards:  73% Completed | 11/15 [00:18<00:05,  1.47s/it]
+Loading safetensors checkpoint shards:  80% Completed | 12/15 [00:20<00:04,  1.59s/it]
+Loading safetensors checkpoint shards:  87% Completed | 13/15 [00:22<00:03,  1.68s/it]
+Loading safetensors checkpoint shards:  93% Completed | 14/15 [00:24<00:01,  1.77s/it]
+Loading safetensors checkpoint shards: 100% Completed | 15/15 [00:26<00:00,  1.80s/it]
+Loading safetensors checkpoint shards: 100% Completed | 15/15 [00:26<00:00,  1.75s/it]
+
+2025-07-31 05:28:53 INFO     LLM is loaded
+2025-07-31 05:28:53 INFO     Running warmup
+2025-07-31 05:28:53 INFO     Waiting for server[0] warmup to complete...
+2025-07-31 05:29:22 INFO     VLLM finished
+2025-07-31 05:29:22 INFO     output tokens collected
+2025-07-31 05:29:22 INFO     Processed output | start, end = 0, None
+2025-07-31 05:29:22 INFO     Running warmup finished
+2025-07-31 05:29:22 INFO     Time spent from start to inference start: 107.60589838027954
+2025-07-31 05:29:22 INFO     Issue queries  |  number of queries = 3000
+2025-07-31 05:29:22 INFO     Converted queries to prompt tokens  |  number of queries = 3000
+2025-07-31 05:29:22 INFO     Put prompt tokens in pipe #0
+2025-07-31 05:32:28 INFO     VLLM finished
+2025-07-31 05:32:28 INFO     output tokens collected
+2025-07-31 05:32:28 INFO     Processed output | start, end = 0, 3000
+2025-07-31 05:32:28 INFO     LLM is stopping
+2025-07-31 05:32:28 INFO     vLLM engine thread finished for device_ids=(0,)
+2025-07-31 05:32:28 INFO     Got item  |  start, end = 0, 3000  |  n outputs = 3000
+2025-07-31 05:32:28 INFO     Signaling LoadGen output
+2025-07-31 05:32:28 INFO     Query chunk done. Remaining GPUs: 1
+================================================
+MLPerf Results Summary
+================================================
+SUT name : PySUT
+Scenario : Offline
+Mode     : PerformanceOnly
+Samples per second: 16.0832
+Tokens per second: 4187.86
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+
+================================================
+Additional Stats
+================================================
+Min latency (ns)                : 186505415717
+Max latency (ns)                : 186529665035
+Mean latency (ns)               : 186517584756
+50.00 percentile latency (ns)   : 186517728847
+90.00 percentile latency (ns)   : 186527310165
+95.00 percentile latency (ns)   : 186528470188
+97.00 percentile latency (ns)   : 186528943478
+99.00 percentile latency (ns)   : 186529417879
+99.90 percentile latency (ns)   : 186529649732
+
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 3000
+target_qps : 116
+ttft_latency (ns): 2000000000
+tpot_latency (ns): 200000000
+max_async_queries : 1
+min_duration (ms): 1000
+max_duration (ms): 1000
+min_query_count : 1
+max_query_count : 3000
+qsl_rng_seed : 1780908523862526354
+sample_index_rng_seed : 14771362308971278857
+schedule_rng_seed : 18209322760996052031
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 24576
+WARNING: sample_concatenate_permutation was set to true. 
+Generated samples per query might be different as the one in the setting.
+Check the generated_samples_per_query line in the detailed log for the real
+samples_per_query value
+
+3 warnings encountered. See detailed log.
+
+No errors encountered during test.
+2025-07-31 05:32:28 INFO     Completed benchmark run
+2025-07-31 05:32:28 INFO     Total time spent with run: 294.16645884513855
+2025-07-31 05:32:28 INFO     Run Completed!
+2025-07-31 05:32:28 INFO     Destroying SUT...
+2025-07-31 05:32:28 INFO     Destroying QSL...
+benchmark_name: llama2-70b
+scenario: offline
+test_mode: performance
+backend: vllm
+engine_version: sync
+env_config:
+  HARNESS_DISABLE_VLLM_LOGS: 1
+  HARNESS_GC_LIMIT: 100000
+  HIP_FORCE_DEV_KERNARG: 1
+  VLLM_LOGGING_LEVEL: ERROR
+  VLLM_USE_TRITON_FLASH_ATTN: 0
+  VLLM_FP8_PADDING: 1
+  VLLM_FP8_ACT_PADDING: 1
+  VLLM_FP8_WEIGHT_PADDING: 1
+  VLLM_FP8_REDUCE_CONV: 1
+  VLLM_SCHED_PREFILL_KVC_FREEPCT: 30.0
+  VLLM_ENGINE_ITERATION_TIMEOUT_S: 36000
+  VLLM_USE_V1: 0
+  VLLM_LLAMA2_MLPERF_SCHED: 1
+  VLLM_LLAMA2_MLPERF_MAX_TARGET_DECODE_BATCH: 2048
+  VLLM_LLAMA2_MLPERF_MIN_TARGET_DECODE_BATCH: 2048
+  VLLM_LLAMA2_MLPERF_STEP_DECODE_BATCH: 256
+  VLLM_MLPERF_SWIZZLE_FP8_LINEAR: 1
+harness_config:
+  target_qps: -1
+  total_sample_count: 3000
+  duration_sec: 1
+  enable_log_trace: false
+  enable_warmup: true
+  schedule_algo: shortest_queue
+  enable_batcher: false
+  batcher_threshold: 0.1
+  gpu_batch_size: 128
+  dataset_path: /data/processed-openorca/open_orca_gpt4_tokenized_llama.sampled_24576.pkl
+  mlperf_conf_path: /app/mlperf_inference/mlperf.conf
+  user_conf_path: /lab-mlperf-inference/code/user_mi325x.conf
+  output_log_dir: measure_per_gpu_perf/llama2-70b_offline_performance_run_1_gpu_7
+  load_balance_token_weight: 0.02
+  load_balance_window_size: 10
+  resource_checker_abort_on_failure: false
+  tensor_parallelism: 1
+  pipeline_parallelism: 1
+  max_num_batched_tokens: 65536
+  debug_dump_model_output: false
+  debug_record_sample_latencies: false
+  debug_latency_output_path: samples_latency_data.txt
+  debug_model_output_path: model_output.txt
+  sorting:
+    strategy: ignore
+    buckets:
+    - 12.606318268527133
+    - 12.386610940067131
+    - 12.616920844404165
+    - 12.451728667660667
+    - 12.741710562390091
+    - 12.52578780461099
+    - 12.2604200642337
+    - 12.41050284810611
+  device_count: 1
+config_path: harness_llm/models/llama2-70b/
+config_name: offline_mi325x
+llm_config:
+  model: /model/llama2-70b-chat-hf/fp8_quantized
+  dtype: float16
+  kv_cache_dtype: fp8
+  quantization: fp8
+  pipeline_parallel_size: 1
+  tensor_parallel_size: 1
+  gpu_memory_utilization: 0.98
+  max_model_len: 2048
+  swap_space: 0
+  block_size: 32
+  num_scheduler_steps: 7
+  enforce_eager: true
+  max_seq_len_to_capture: 2048
+  max_num_batched_tokens: 65536
+  max_num_seqs: 2700
+  disable_custom_all_reduce: true
+  disable_log_stats: true
+  enable_chunked_prefill: false
+  enable_prefix_caching: false
+sampling_params:
+  'n': 1
+  presence_penalty: 0.0
+  frequency_penalty: 0.0
+  repetition_penalty: 1.0
+  temperature: 0.0
+  top_p: 1
+  top_k: 1
+  min_p: 0
+  max_tokens: 1024
+  min_tokens: 1
+  ignore_eos: false
+  detokenize: false
+
+[rank0]:[W731 05:32:29.455689634 ProcessGroupNCCL.cpp:1476] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

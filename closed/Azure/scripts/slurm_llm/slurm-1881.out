@@ -1,0 +1,543 @@
++ export scenario=offline
++ scenario=offline
+++ scontrol show hostnames 'ccwcus-gpu-[1,3-4,6,8-9,11,13,15,17,19-20,22,24,26,28,31,33]'
++ node_list='ccwcus-gpu-1
+ccwcus-gpu-3
+ccwcus-gpu-4
+ccwcus-gpu-6
+ccwcus-gpu-8
+ccwcus-gpu-9
+ccwcus-gpu-11
+ccwcus-gpu-13
+ccwcus-gpu-15
+ccwcus-gpu-17
+ccwcus-gpu-19
+ccwcus-gpu-20
+ccwcus-gpu-22
+ccwcus-gpu-24
+ccwcus-gpu-26
+ccwcus-gpu-28
+ccwcus-gpu-31
+ccwcus-gpu-33'
+++ format_hostnames 4 ccwcus-gpu-1 ccwcus-gpu-3 ccwcus-gpu-4 ccwcus-gpu-6 ccwcus-gpu-8 ccwcus-gpu-9 ccwcus-gpu-11 ccwcus-gpu-13 ccwcus-gpu-15 ccwcus-gpu-17 ccwcus-gpu-19 ccwcus-gpu-20 ccwcus-gpu-22 ccwcus-gpu-24 ccwcus-gpu-26 ccwcus-gpu-28 ccwcus-gpu-31 ccwcus-gpu-33
+++ local num_servers=4
+++ shift
+++ hosts=('ccwcus-gpu-1' 'ccwcus-gpu-3' 'ccwcus-gpu-4' 'ccwcus-gpu-6' 'ccwcus-gpu-8' 'ccwcus-gpu-9' 'ccwcus-gpu-11' 'ccwcus-gpu-13' 'ccwcus-gpu-15' 'ccwcus-gpu-17' 'ccwcus-gpu-19' 'ccwcus-gpu-20' 'ccwcus-gpu-22' 'ccwcus-gpu-24' 'ccwcus-gpu-26' 'ccwcus-gpu-28' 'ccwcus-gpu-31' 'ccwcus-gpu-33')
+++ local hosts
+++ local result=
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n '' ]]
+++ result+=ccwcus-gpu-1:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-1:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-1:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-1:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-3:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-3:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-3:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-3:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-4:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-4:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-4:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-4:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-6:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-6:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-6:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-6:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-8:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-8:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-8:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-8:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-9:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-9:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-9:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-9:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-11:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-11:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-11:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-11:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-13:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-13:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-13:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-13:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-15:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-15:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-15:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-15:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-17:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-17:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-17:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-17:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-19:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-19:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-19:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-19:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-20:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-20:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-20:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-20:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-22:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-22:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-22:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-22:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-24:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-24:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-24:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-24:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-26:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-26:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-26:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-26:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-28:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-28:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-28:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-28:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-31:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-31:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-31:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-31:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ for host in "${hosts[@]}"
+++ (( i=0 ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003 ]]
+++ result+=,
+++ result+=ccwcus-gpu-33:30000
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000 ]]
+++ result+=,
+++ result+=ccwcus-gpu-33:30001
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001 ]]
+++ result+=,
+++ result+=ccwcus-gpu-33:30002
+++ (( i++ ))
+++ (( i<num_servers ))
+++ [[ -n ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002 ]]
+++ result+=,
+++ result+=ccwcus-gpu-33:30003
+++ (( i++ ))
+++ (( i<num_servers ))
+++ echo ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002,ccwcus-gpu-33:30003
++ export endpoints=ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002,ccwcus-gpu-33:30003
++ endpoints=ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002,ccwcus-gpu-33:30003
++ export engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint
++ engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint
++ export container_workdir=/work
++ container_workdir=/work
++ export script_dir=/work/scripts/slurm_llm
++ script_dir=/work/scripts/slurm_llm
++ export actual_workdir=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA
++ actual_workdir=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA
++ export container_name_suffix=mlperf_inference
++ container_name_suffix=mlperf_inference
++ export container_mount=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts
++ container_mount=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts
++ export 'base_run_args=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint'
++ base_run_args='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint'
++ '[' trt == trt ']'
++ export 'base_run_args=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp'
++ base_run_args='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp'
++ export 'srun_header=srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root'
++ srun_header='srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root'
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --container-name=mlperf_inference-generate_engines --nodes=1 '--export=RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp,script_dir,SYSTEM_NAME' --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-generate_engines.txt --mpi=pmix /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make generate_engines'
+srun: error: ccwcus-gpu-1: task 0: Exited with exit code 2
+++ scontrol show hostnames 'ccwcus-gpu-[1,3-4,6,8-9,11,13,15,17,19-20,22,24,26,28,31,33]'
++ node_list='ccwcus-gpu-1
+ccwcus-gpu-3
+ccwcus-gpu-4
+ccwcus-gpu-6
+ccwcus-gpu-8
+ccwcus-gpu-9
+ccwcus-gpu-11
+ccwcus-gpu-13
+ccwcus-gpu-15
+ccwcus-gpu-17
+ccwcus-gpu-19
+ccwcus-gpu-20
+ccwcus-gpu-22
+ccwcus-gpu-24
+ccwcus-gpu-26
+ccwcus-gpu-28
+ccwcus-gpu-31
+ccwcus-gpu-33'
++ export 'RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --server_in_foreground'
++ RUN_ARGS='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --server_in_foreground'
++ for node in $node_list
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-1 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-1-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-3 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-3-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-4 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-4-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-6 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-6-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-8 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-8-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-9 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-9-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-11 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-11-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-13 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-13-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-15 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-15-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-17 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-17-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-19 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-19-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-20 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-20-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-22 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-22-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-24 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-24-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-26 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-26-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-28 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-28-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ for node in $node_list
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-31 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-31-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ unset RUN_ARGS
++ srun --container-image=/shared/mlperf/partner-drop-v5.1.4/latest.sqsh --container-mounts=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA:/work,/shared/mlperf:/home/mlperf_inference_storage,/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/engines/GB200-NVL72_GB200-186GB_aarch64x4/Offline/llama2-70b/gpu-fp4-b2048-tp1-pp1.cp990:/home/artefacts --container-workdir=/work --container-remap-root --export=RUN_ARGS,script_dir,SYSTEM_NAME --container-name=mlperf_inference-run_llm_server --nodes=1 -w ccwcus-gpu-33 --output=/shared/mlperf/partner-drop-v5.1.4/closed/NVIDIA/build/slurm_logs/slurm-1881-ccwcus-gpu-33-server-launch-log.txt /bin/bash -c 'source $script_dir/local_node_instance/prefix.sh && make run_llm_server'
++ export 'RUN_ARGS=--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002,ccwcus-gpu-33:30003  --test_mode=AccuracyOnly'
++ RUN_ARGS='--benchmarks=llama2-70b  --scenarios=offline  --core_type=trtllm_endpoint  --engine_dir=/home/artefacts/engines/mlperf-engine_llama2-70b.offline.trtllm_endpoint --trtllm_runtime_flags=trtllm_backend:cpp  --trtllm_server_urls=ccwcus-gpu-1:30000,ccwcus-gpu-1:30001,ccwcus-gpu-1:30002,ccwcus-gpu-1:30003,ccwcus-gpu-3:30000,ccwcus-gpu-3:30001,ccwcus-gpu-3:30002,ccwcus-gpu-3:30003,ccwcus-gpu-4:30000,ccwcus-gpu-4:30001,ccwcus-gpu-4:30002,ccwcus-gpu-4:30003,ccwcus-gpu-6:30000,ccwcus-gpu-6:30001,ccwcus-gpu-6:30002,ccwcus-gpu-6:30003,ccwcus-gpu-8:30000,ccwcus-gpu-8:30001,ccwcus-gpu-8:30002,ccwcus-gpu-8:30003,ccwcus-gpu-9:30000,ccwcus-gpu-9:30001,ccwcus-gpu-9:30002,ccwcus-gpu-9:30003,ccwcus-gpu-11:30000,ccwcus-gpu-11:30001,ccwcus-gpu-11:30002,ccwcus-gpu-11:30003,ccwcus-gpu-13:30000,ccwcus-gpu-13:30001,ccwcus-gpu-13:30002,ccwcus-gpu-13:30003,ccwcus-gpu-15:30000,ccwcus-gpu-15:30001,ccwcus-gpu-15:30002,ccwcus-gpu-15:30003,ccwcus-gpu-17:30000,ccwcus-gpu-17:30001,ccwcus-gpu-17:30002,ccwcus-gpu-17:30003,ccwcus-gpu-19:30000,ccwcus-gpu-19:30001,ccwcus-gpu-19:30002,ccwcus-gpu-19:30003,ccwcus-gpu-20:30000,ccwcus-gpu-20:30001,ccwcus-gpu-20:30002,ccwcus-gpu-20:30003,ccwcus-gpu-22:30000,ccwcus-gpu-22:30001,ccwcus-gpu-22:30002,ccwcus-gpu-22:30003,ccwcus-gpu-24:30000,ccwcus-gpu-24:30001,ccwcus-gpu-24:30002,ccwcus-gpu-24:30003,ccwcus-gpu-26:30000,ccwcus-gpu-26:30001,ccwcus-gpu-26:30002,ccwcus-gpu-26:30003,ccwcus-gpu-28:30000,ccwcus-gpu-28:30001,ccwcus-gpu-28:30002,ccwcus-gpu-28:30003,ccwcus-gpu-31:30000,ccwcus-gpu-31:30001,ccwcus-gpu-31:30002,ccwcus-gpu-31:30003,ccwcus-gpu-33:30000,ccwcus-gpu-33:30001,ccwcus-gpu-33:30002,ccwcus-gpu-33:30003  --test_mode=AccuracyOnly'
++ wait
+srun: error: ccwcus-gpu-19: task 0: Exited with exit code 1
+srun: error: ccwcus-gpu-3: task 0: Exited with exit code 1
+srun: error: ccwcus-gpu-8: task 0: Exited with exit code 1
+srun: error: ccwcus-gpu-22: task 0: Exited with exit code 1
+srun: error: ccwcus-gpu-31: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-20: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-9: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-26: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-28: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-33: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-11: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-13: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-1: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-17: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-4: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-15: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-6: task 0: Exited with exit code 2
+srun: error: ccwcus-gpu-24: task 0: Exited with exit code 2

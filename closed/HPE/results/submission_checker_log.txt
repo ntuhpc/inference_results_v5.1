@@ -1,0 +1,171 @@
+[2025-08-01 16:00:25,041 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,060 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,072 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,083 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,085 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 16:00:25,097 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,109 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,111 submission_checker.py:1678 INFO] Target latency: 60000000, Early Stopping Latency: 60000000, Scenario: Server
+[2025-08-01 16:00:25,132 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,149 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,161 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,172 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,173 submission_checker.py:1697 INFO] Target latency: None, Latency: 625486493225, Scenario: Offline
+[2025-08-01 16:00:25,185 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,198 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_ProLiant_DL384_GH200_144GBx2_TRT/dlrm-v2-99/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,200 submission_checker.py:1697 INFO] Target latency: None, Latency: 628132962316, Scenario: Offline
+[2025-08-01 16:00:25,205 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,206 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,208 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,209 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,209 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,212 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,213 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,215 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,216 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,216 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,219 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,220 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,222 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,223 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,223 submission_checker.py:1697 INFO] Target latency: None, Latency: 1441756203945, Scenario: Offline
+[2025-08-01 16:00:25,226 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,228 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,230 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,232 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,232 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,235 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,237 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,239 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,241 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,241 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,244 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,245 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,247 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,249 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,249 submission_checker.py:1697 INFO] Target latency: None, Latency: 2620414128691, Scenario: Offline
+[2025-08-01 16:00:25,252 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,252 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,253 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,254 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,254 submission_checker.py:1697 INFO] Target latency: None, Latency: 605348197026, Scenario: Offline
+[2025-08-01 16:00:25,255 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,255 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,255 submission_checker.py:1697 INFO] Target latency: None, Latency: 604452369563, Scenario: Offline
+[2025-08-01 16:00:25,256 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/whisper/Offline/TEST01 failed
+[2025-08-01 16:00:25,276 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,294 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,296 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,297 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,297 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 16:00:25,298 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,298 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,298 submission_checker.py:1678 INFO] Target latency: 100000000, Early Stopping Latency: 100000000, Scenario: Server
+[2025-08-01 16:00:25,317 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,334 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,336 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,337 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,337 submission_checker.py:1697 INFO] Target latency: None, Latency: 697126669536, Scenario: Offline
+[2025-08-01 16:00:25,338 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,338 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,338 submission_checker.py:1697 INFO] Target latency: None, Latency: 696740839339, Scenario: Offline
+[2025-08-01 16:00:25,354 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,355 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,357 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,358 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,358 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,374 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,375 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,377 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,378 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/mixtral-8x7b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,378 submission_checker.py:1697 INFO] Target latency: None, Latency: 2883536196761, Scenario: Offline
+[2025-08-01 16:00:25,381 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,383 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,385 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,386 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,387 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,390 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,392 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,393 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,395 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,395 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,399 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,400 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,402 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,404 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,404 submission_checker.py:1697 INFO] Target latency: None, Latency: 2628942495182, Scenario: Offline
+[2025-08-01 16:00:25,422 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,439 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,442 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,442 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,443 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,444 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/MultiStream/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,461 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,479 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,481 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,482 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,482 submission_checker.py:1697 INFO] Target latency: None, Latency: 2149808981899, Scenario: Offline
+[2025-08-01 16:00:25,483 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,483 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,483 submission_checker.py:1697 INFO] Target latency: None, Latency: 2130793023990, Scenario: Offline
+[2025-08-01 16:00:25,502 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,519 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,522 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,522 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,523 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,524 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_ML30_RTX_4000_Ada_PCIE_20GBx1_TRT_TRT/retinanet/SingleStream/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,527 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,529 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Interactive/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,530 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,531 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Interactive/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,531 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,534 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,535 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,537 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,538 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,538 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,541 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,542 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,544 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,545 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama3.1-8b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,545 submission_checker.py:1697 INFO] Target latency: None, Latency: 2615176210078, Scenario: Offline
+[2025-08-01 16:00:25,548 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,550 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,552 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,553 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,554 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-08-01 16:00:25,557 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,558 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,560 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,562 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,562 submission_checker.py:1697 INFO] Target latency: None, Latency: 1483359055031, Scenario: Offline
+[2025-08-01 16:00:25,564 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,565 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,565 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,566 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,566 submission_checker.py:1697 INFO] Target latency: None, Latency: 650336424895, Scenario: Offline
+[2025-08-01 16:00:25,567 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,567 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,568 submission_checker.py:1697 INFO] Target latency: None, Latency: 648889698621, Scenario: Offline
+[2025-08-01 16:00:25,569 submission_checker.py:3144 INFO] Compliance test accuracy check (deterministic mode) in closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/whisper/Offline/TEST01 failed
+[2025-08-01 16:00:25,573 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,573 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,576 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,576 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/results/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,576 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-08-01 16:00:25,578 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,578 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,578 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-08-01 16:00:25,580 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,581 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/HPE/compliance/HPE_PROLIANT_DL380A_RTX_PRO_6000_PCIE_96GBx8_TRT_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-08-01 16:00:25,581 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+Traceback (most recent call last):
+  File "/hpelustre/leachk/mlcommons_mlperf_inference/closed/HPE/build/inference/tools/submission/submission_checker.py", line 3543, in <module>
+    sys.exit(main())
+  File "/hpelustre/leachk/mlcommons_mlperf_inference/closed/HPE/build/inference/tools/submission/submission_checker.py", line 3378, in main
+    results, systems = check_results_dir(
+  File "/hpelustre/leachk/mlcommons_mlperf_inference/closed/HPE/build/inference/tools/submission/submission_checker.py", line 2820, in check_results_dir
+    log_result(
+  File "/hpelustre/leachk/mlcommons_mlperf_inference/closed/HPE/build/inference/tools/submission/submission_checker.py", line 2188, in log_result
+    '"' + weight_data_types + '"',
+TypeError: can only concatenate str (not "dict") to str

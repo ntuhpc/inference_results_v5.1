@@ -1,0 +1,53 @@
+From 2fdd58d8907bee272fadcd503b32d950b1280ecf Mon Sep 17 00:00:00 2001
+From: MLPerf <mlperf>
+Date: Wed, 1 Jan 2025 00:00:00 +0000
+Subject: [PATCH] Add ck moe 2 stages input scales
+
+---
+ vllm/envs.py                                   | 6 ++++++
+ vllm/model_executor/layers/quantization/fp8.py | 5 +++++
+ 2 files changed, 11 insertions(+)
+
+diff --git a/vllm/envs.py b/vllm/envs.py
+index 289dd6434..bfc230812 100644
+--- a/vllm/envs.py
++++ b/vllm/envs.py
+@@ -23,6 +23,7 @@ if TYPE_CHECKING:
+     VLLM_USE_AITER: bool = False
+     VLLM_USE_AITER_MOE: bool = True
+     VLLM_USE_AITER_2STAGE_MOE: bool = True
++    VLLM_USE_AITER_2STAGE_MOE_INPUT_SCALES: bool = False
+     VLLM_USE_AITER_PAGED_ATTN: bool = False
+     VLLM_USE_AITER_FP8_BLOCK_MOE: bool = True
+     VLLM_USE_AITER_LINEAR: bool = True
+@@ -314,6 +315,11 @@ environment_variables: dict[str, Callable[[], Any]] = {
+     lambda: (os.getenv("VLLM_USE_AITER_2STAGE_MOE", "True").lower() in
+              ("true", "1")),
+ 
++    # use aiter ck fused moe with adjusting the input scales for w13
++    "VLLM_USE_AITER_2STAGE_MOE_INPUT_SCALES":
++    lambda: (os.getenv("VLLM_USE_AITER_2STAGE_MOE_INPUT_SCALES", "False").lower() in
++             ("true", "1")),
++
+     # use aiter ck fused moe op if ater ops are enabled
+     "VLLM_USE_AITER_FP8_BLOCK_MOE":
+     lambda: (os.getenv("VLLM_USE_AITER_FP8_BLOCK_MOE", "True").lower() in
+diff --git a/vllm/model_executor/layers/quantization/fp8.py b/vllm/model_executor/layers/quantization/fp8.py
+index 3da19f2b6..110873d4b 100644
+--- a/vllm/model_executor/layers/quantization/fp8.py
++++ b/vllm/model_executor/layers/quantization/fp8.py
+@@ -743,6 +743,11 @@ class Fp8MoEMethod(FusedMoEMethodBase):
+                     w2_scales.contiguous(), requires_grad=False)
+             layer.w13_weight_scale = torch.nn.Parameter(
+                 max_w13_scales.contiguous(), requires_grad=False)
++
++            # update the input scales for moe kernel. 
++            if envs.VLLM_USE_AITER_2STAGE_MOE_INPUT_SCALES:
++                layer.w13_input_scale = torch.nn.Parameter(layer.w13_input_scale + 0.00002, requires_grad=False)
++
+             return
+ 
+     def apply(
+-- 
+2.34.1
+

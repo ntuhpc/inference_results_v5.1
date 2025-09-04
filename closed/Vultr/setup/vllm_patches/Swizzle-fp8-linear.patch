@@ -1,0 +1,43 @@
+From 61c7e61801f3471a36548b0d02d74fbc743958a5 Mon Sep 17 00:00:00 2001
+From: MLPerf <mlperf>
+Date: TWed, 1 Jan 2025 00:00:00 +0000
+Subject: [PATCH] Swizzle fp8 linear
+
+---
+ vllm/model_executor/layers/quantization/fp8.py | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/vllm/model_executor/layers/quantization/fp8.py b/vllm/model_executor/layers/quantization/fp8.py
+index 12f926710..97240b029 100644
+--- a/vllm/model_executor/layers/quantization/fp8.py
++++ b/vllm/model_executor/layers/quantization/fp8.py
+@@ -9,6 +9,7 @@ import torch
+ import torch.nn.functional as F
+ from torch.nn import Module
+ from torch.nn.parameter import Parameter
++import torchao
+
+ import vllm.envs as envs
+ from vllm import _custom_ops as ops
+@@ -378,7 +379,8 @@ class Fp8LinearMethod(LinearMethodBase):
+
+             weight = self._maybe_pad_weight(weight)
+             # Update layer with new values.
+-            layer.weight = Parameter(weight.t(), requires_grad=False)
++            layer.weight = Parameter(torchao.swizzle.SwizzleTensor.shallow_transpose( \
++                                     torchao.swizzle.SwizzleTensor(weight.t())), requires_grad=False)
+             layer.weight_scale = Parameter(weight_scale, requires_grad=False)
+             if self.quant_config.activation_scheme == "static":
+                 layer.input_scale = Parameter(layer.input_scale.max(),
+@@ -418,7 +420,7 @@ class Fp8LinearMethod(LinearMethodBase):
+             )
+
+         return self.fp8_linear.apply(input=x,
+-                                     weight=layer.weight,
++                                     weight=layer.weight.T,
+                                      weight_scale=layer.weight_scale,
+                                      out_dtype=self.out_dtype,
+                                      input_scale=layer.input_scale,
+--
+2.34.1
+

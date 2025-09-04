@@ -1,0 +1,734 @@
+{
+  "app-mlperf-inference,d775cac873ee4231:reference,pointpainting,pytorch,cuda,valid,r5.1-dev_default,singlestream": [
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "get,sys-utils-mlc": {
+        "script_uid": "bc90993277e84b8e",
+        "script_alias": "get-sys-utils-mlc",
+        "script_tags": "get,sys-utils-cm,sys-utils-mlc",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "get,python": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "get,mlcommons,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "custom-git-b9ed3c7fec1f16fe0576852bd3ade78100d86672",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "get,mlperf,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "custom-git-b9ed3c7fec1f16fe0576852bd3ade78100d86672",
+        "parent": "get-mlperf-inference-utils,e341e5f86d8342e5"
+      }
+    },
+    {
+      "get,mlperf,inference,utils": {
+        "script_uid": "e341e5f86d8342e5",
+        "script_alias": "get-mlperf-inference-utils",
+        "script_tags": "get,mlperf,inference,util,utils,functions",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "get,cuda,_toolkit": {
+        "script_uid": "46d133d9ef92422d",
+        "script_alias": "get-cuda",
+        "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
+        "script_variations": "toolkit",
+        "version": "12.6",
+        "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.pycuda )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.pycuda": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.pycuda",
+        "version": "2025.1.1",
+        "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.numpy": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.numpy",
+        "version": "1.26.4",
+        "parent": "get-cuda-devices,7a3ede4d3558427a ( with-pycuda )"
+      }
+    },
+    {
+      "get,cuda-devices,_with-pycuda": {
+        "script_uid": "7a3ede4d3558427a",
+        "script_alias": "get-cuda-devices",
+        "script_tags": "get,cuda-devices",
+        "script_variations": "with-pycuda",
+        "version": "",
+        "parent": "app-mlperf-inference,d775cac873ee4231 ( reference,_pointpainting,_pytorch,_cuda,_valid,_r5.1-dev_default,_singlestream )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,sys-utils-mlc": {
+        "script_uid": "bc90993277e84b8e",
+        "script_alias": "get-sys-utils-mlc",
+        "script_tags": "get,sys-utils-cm,sys-utils-mlc",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,cuda,_cudnn": {
+        "script_uid": "46d133d9ef92422d",
+        "script_alias": "get-cuda",
+        "script_tags": "get,cuda,cuda-compiler,cuda-lib,toolkit,lib,nvcc,get-nvcc,get-cuda,46d133d9ef92422d",
+        "script_variations": "cudnn",
+        "version": "12.6",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( torch_cuda )"
+      }
+    },
+    {
+      "get,generic-python-lib,_torch_cuda": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "torch_cuda",
+        "version": "2.2.2",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( torchvision_cuda )"
+      }
+    },
+    {
+      "get,generic-python-lib,_torchvision_cuda": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "torchvision_cuda",
+        "version": "0.17.2",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,ml-model,pointpainting": {
+        "script_uid": "3562621a8994411d",
+        "script_alias": "get-ml-model-pointpillars",
+        "script_tags": "get,ml-model,ml,model,pointpainting",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,dataset,waymo": {
+        "script_uid": "21b269c753b64437",
+        "script_alias": "get-dataset-waymo",
+        "script_tags": "get,dataset,waymo",
+        "script_variations": "",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
+      }
+    },
+    {
+      "get,python": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
+      }
+    },
+    {
+      "get,cache,dir,_name.mlperf-inference-sut-configs": {
+        "script_uid": "48f4622e059b45ce",
+        "script_alias": "get-cache-dir",
+        "script_tags": "get,cache,dir,directory",
+        "script_variations": "name.mlperf-inference-sut-configs",
+        "version": "",
+        "parent": "get-mlperf-inference-sut-configs,c2fbf72009e2445b"
+      }
+    },
+    {
+      "get,sut,configs": {
+        "script_uid": "c2fbf72009e2445b",
+        "script_alias": "get-mlperf-inference-sut-configs",
+        "script_tags": "get,mlperf,inference,sut,configs,sut-configs",
+        "script_variations": "",
+        "version": "",
+        "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
+      }
+    },
+    {
+      "get,mlcommons,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "custom-git-b9ed3c7fec1f16fe0576852bd3ade78100d86672",
+        "parent": "generate-mlperf-inference-user-conf,3af4475745964b93 ( wg-inference )"
+      }
+    },
+    {
+      "generate,user-conf,mlperf,inference,_wg-inference": {
+        "script_uid": "3af4475745964b93",
+        "script_alias": "generate-mlperf-inference-user-conf",
+        "script_tags": "generate,mlperf,inference,user-conf,inference-user-conf",
+        "script_variations": "wg-inference",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,loadgen,_wg-inference": {
+        "script_uid": "64c3d98d0ba04950",
+        "script_alias": "get-mlperf-inference-loadgen",
+        "script_tags": "get,loadgen,inference,inference-loadgen,mlperf,mlcommons",
+        "script_variations": "wg-inference",
+        "version": "",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,mlcommons,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "custom-git-b9ed3c7fec1f16fe0576852bd3ade78100d86672",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,mlcommons,inference,src": {
+        "script_uid": "4b57186581024797",
+        "script_alias": "get-mlperf-inference-src",
+        "script_tags": "get,src,source,inference,inference-src,inference-source,mlperf,mlcommons",
+        "script_variations": "",
+        "version": "custom-git-b9ed3c7fec1f16fe0576852bd3ade78100d86672",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.psutil )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.psutil": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.psutil",
+        "version": "7.0.0",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.shapely )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.shapely": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.shapely",
+        "version": "2.1.1",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numba )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.numba": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.numba",
+        "version": "0.61.2",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.open3d )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.open3d": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.open3d",
+        "version": "0.19.0",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "get,generic-python-lib,_pip": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "pip",
+        "version": "22.0.2",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.numpy": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.numpy",
+        "version": "2.2.6",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "detect,os": {
+        "script_uid": "863735b7db8c44fc",
+        "script_alias": "detect-os",
+        "script_tags": "detect-os,detect,os,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "detect-cpu,586c8a43320142f7"
+      }
+    },
+    {
+      "detect,cpu": {
+        "script_uid": "586c8a43320142f7",
+        "script_alias": "detect-cpu",
+        "script_tags": "detect,cpu,detect-cpu,info",
+        "script_variations": "",
+        "version": "",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( pip )"
+      }
+    },
+    {
+      "get,generic-python-lib,_pip": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "pip",
+        "version": "22.0.2",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.numpy )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.numpy": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.numpy",
+        "version": "1.26.4",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.tensorboard )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.tensorboard": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.tensorboard",
+        "version": "2.20.0",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.onnxruntime )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.onnxruntime": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.onnxruntime",
+        "version": "1.22.1",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.opencv-python )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.opencv-python": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.opencv-python",
+        "version": "4.12.0.88",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.scikit-image )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.scikit-image": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.scikit-image",
+        "version": "0.25.2",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.scipy )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.scipy": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.scipy",
+        "version": "1.15.3",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,python3": {
+        "script_uid": "d0b5dd74373f4a62",
+        "script_alias": "get-python3",
+        "script_tags": "get,python,python3,get-python,get-python3",
+        "script_variations": "",
+        "version": "3.10.12",
+        "parent": "get-generic-python-lib,94b62a682bc44791 ( package.ninja )"
+      }
+    },
+    {
+      "get,generic-python-lib,_package.ninja": {
+        "script_uid": "94b62a682bc44791",
+        "script_alias": "get-generic-python-lib",
+        "script_tags": "get,install,generic,pip-package,generic-python-lib",
+        "script_variations": "package.ninja",
+        "version": "1.11.1.4",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,generic-sys-util,_ffmpeg": {
+        "script_uid": "bb0393afa8404a11",
+        "script_alias": "get-generic-sys-util",
+        "script_tags": "get,sys-util,generic,generic-sys-util",
+        "script_variations": "ffmpeg",
+        "version": "undetected",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,generic-sys-util,_libsm6": {
+        "script_uid": "bb0393afa8404a11",
+        "script_alias": "get-generic-sys-util",
+        "script_tags": "get,sys-util,generic,generic-sys-util",
+        "script_variations": "libsm6",
+        "version": "undetected",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    },
+    {
+      "get,generic-sys-util,_libxext6": {
+        "script_uid": "bb0393afa8404a11",
+        "script_alias": "get-generic-sys-util",
+        "script_tags": "get,sys-util,generic,generic-sys-util",
+        "script_variations": "libxext6",
+        "version": "undetected",
+        "parent": "app-mlperf-inference-mlcommons-python,ff149e9781fc4b65 ( pointpainting,_singlestream,_pytorch,_cuda,_fp32 )"
+      }
+    }
+  ]
+}

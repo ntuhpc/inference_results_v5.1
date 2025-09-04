@@ -1,0 +1,28 @@
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /app
+
+ARG PYTORCH_ROCM_ARCH=gfx942
+ENV PYTORCH_ROCM_ARCH=${PYTORCH_ROCM_ARCH}
+ARG HIPBLASLT_BRANCH
+ARG HIPBLAS_COMMON_BRANCH
+# Set to "--legacy_hipblas_direct" for ROCm<=6.2
+ARG LEGACY_HIPBLASLT_OPTION
+RUN git clone https://github.com/ROCm/hipBLAS-common.git
+RUN cd hipBLAS-common \
+    && git checkout ${HIPBLAS_COMMON_BRANCH} \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make package \
+    && dpkg -i ./*.deb
+RUN git clone https://github.com/ROCm/hipBLASLt
+RUN cd hipBLASLt \
+    && git checkout ${HIPBLASLT_BRANCH} \
+    && ./install.sh -d --architecture ${PYTORCH_ROCM_ARCH} ${LEGACY_HIPBLASLT_OPTION} \
+    && cd build/release \
+    && make package \
+    && dpkg -i ./*.deb

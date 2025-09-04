@@ -1,0 +1,59 @@
+User Conf path: /home/mlcuser/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/5dc51356d189470da9dab46974f84aa3.conf
+Dataset Preprocessed path: /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_94d0d05f
+Dataset List filepath: 
+Scenario: Offline
+Mode: AccuracyOnly
+Batch size: 32
+Query count override: 0
+Performance sample count override in application: 0
+loaded imagenet with 50000 samples
+starting benchmark
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 1024
+loading samples to ram with total sample size: 848

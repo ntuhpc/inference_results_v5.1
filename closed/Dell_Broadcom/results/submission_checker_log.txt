@@ -1,0 +1,78 @@
+[2025-07-31 03:10:44,284 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,286 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,288 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,290 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,290 submission_checker.py:1697 INFO] Target latency: None, Latency: 2673813072565, Scenario: Offline
+[2025-07-31 03:10:44,292 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,294 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,296 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,297 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,298 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 03:10:44,299 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,299 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,300 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,301 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,301 submission_checker.py:1697 INFO] Target latency: None, Latency: 727410806357, Scenario: Offline
+[2025-07-31 03:10:44,301 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,302 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,302 submission_checker.py:1697 INFO] Target latency: None, Latency: 725527242766, Scenario: Offline
+[2025-07-31 03:10:44,303 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,303 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,303 submission_checker.py:1697 INFO] Target latency: None, Latency: 722440946224, Scenario: Offline
+[2025-07-31 03:10:44,304 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,305 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,305 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,306 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,306 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-07-31 03:10:44,307 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,307 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/TEST01/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,307 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-07-31 03:10:44,308 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,309 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/compliance/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server/TEST04/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,309 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 20000000000, Scenario: Server
+[2025-07-31 03:10:44,310 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,311 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,311 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,312 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,312 submission_checker.py:1697 INFO] Target latency: None, Latency: 9812775036675, Scenario: Offline
+[2025-07-31 03:10:44,313 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,314 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,315 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,316 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,316 submission_checker.py:1678 INFO] Target latency: 60000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 03:10:44,318 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,319 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,321 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,323 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,323 submission_checker.py:1697 INFO] Target latency: None, Latency: 2682855158072, Scenario: Offline
+[2025-07-31 03:10:44,325 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,327 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/accuracy/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,329 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,331 log_parser.py:59 INFO] Sucessfully loaded MLPerf log from closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Server/performance/run_1/mlperf_log_detail.txt.
+[2025-07-31 03:10:44,331 submission_checker.py:1678 INFO] Target latency: 20000000000, Early Stopping Latency: 0, Scenario: Server
+[2025-07-31 03:10:44,331 submission_checker.py:3397 INFO] ---
+[2025-07-31 03:10:44,331 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Offline 34485.7
+[2025-07-31 03:10:44,331 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99.9/Server 33370.6
+[2025-07-31 03:10:44,331 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Offline 34301.9
+[2025-07-31 03:10:44,331 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama2-70b-99/Server 33384.7
+[2025-07-31 03:10:44,331 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Offline 547.261
+[2025-07-31 03:10:44,332 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/llama3.1-405b/Server 277.331
+[2025-07-31 03:10:44,332 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Offline 18.6415
+[2025-07-31 03:10:44,332 submission_checker.py:3401 INFO] Results closed/Dell_Broadcom/results/vXE9680_H200-SXM-141GBx8_TRT/stable-diffusion-xl/Server 17.9503
+[2025-07-31 03:10:44,332 submission_checker.py:3403 INFO] ---
+[2025-07-31 03:10:44,332 submission_checker.py:3492 INFO] ---
+[2025-07-31 03:10:44,332 submission_checker.py:3493 INFO] Results=8, NoResults=0, Power Results=0
+[2025-07-31 03:10:44,332 submission_checker.py:3500 INFO] ---
+[2025-07-31 03:10:44,332 submission_checker.py:3501 INFO] Closed Results=8, Closed Power Results=0
+
+[2025-07-31 03:10:44,332 submission_checker.py:3506 INFO] Open Results=0, Open Power Results=0
+
+[2025-07-31 03:10:44,332 submission_checker.py:3511 INFO] Network Results=0, Network Power Results=0
+
+[2025-07-31 03:10:44,332 submission_checker.py:3516 INFO] ---
+[2025-07-31 03:10:44,332 submission_checker.py:3518 INFO] Systems=1, Power Systems=0
+[2025-07-31 03:10:44,332 submission_checker.py:3522 INFO] Closed Systems=1, Closed Power Systems=0
+[2025-07-31 03:10:44,332 submission_checker.py:3527 INFO] Open Systems=0, Open Power Systems=0
+[2025-07-31 03:10:44,332 submission_checker.py:3532 INFO] Network Systems=0, Network Power Systems=0
+[2025-07-31 03:10:44,332 submission_checker.py:3537 INFO] ---
+[2025-07-31 03:10:44,332 submission_checker.py:3542 INFO] SUMMARY: submission looks OK

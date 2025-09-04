@@ -1,0 +1,56 @@
+{
+    "TestScenario.SingleStream": {
+        "count": 453399,
+        "good_items": 0,
+        "mean": 0.0012562237928996276,
+        "percentiles": {
+            "50.0": 0.0012514591217041016,
+            "80.0": 0.0012655258178710938,
+            "90.0": 0.0012764930725097656,
+            "95.0": 0.0012886524200439453,
+            "99.0": 0.001316070556640625,
+            "99.9": 0.0013879780769348316
+        },
+        "qps": 754.5140944198113,
+        "took": 600.9152159690857,
+        "total_items": 453399
+    },
+    "args": {
+        "accuracy": false,
+        "audit_conf": "audit.config",
+        "backend": "openvino",
+        "cache": 0,
+        "cache_dir": null,
+        "count": null,
+        "data_format": null,
+        "dataset": "imagenet_pytorch",
+        "dataset_list": null,
+        "dataset_path": "./data_resnet/imagenet/",
+        "debug": false,
+        "device": null,
+        "find_peak_performance": false,
+        "inputs": null,
+        "max_batchsize": 1,
+        "max_latency": null,
+        "model": "./mlperf-models/resnet50_int8.xml",
+        "model_name": "resnet50",
+        "output": "output/resnet50_ultra_255H_singlestream",
+        "outputs": [
+            "softmax_tensor"
+        ],
+        "performance_sample_count": null,
+        "preprocessed_dir": null,
+        "profile": "resnet50-openvino",
+        "qps": null,
+        "samples_per_query": 8,
+        "scenario": "SingleStream",
+        "threads": 16,
+        "time": null,
+        "use_preprocessed_dataset": false,
+        "user_conf": "user.conf"
+    },
+    "cmdline": "Namespace(dataset='imagenet_pytorch', dataset_path='./data_resnet/imagenet/', dataset_list=None, data_format=None, profile='resnet50-openvino', scenario='SingleStream', max_batchsize=1, model='./mlperf-models/resnet50_int8.xml', output='output/resnet50_ultra_255H_singlestream', inputs=None, outputs=['softmax_tensor'], backend='openvino', device=None, model_name='resnet50', threads=16, qps=None, cache=0, cache_dir=None, preprocessed_dir=None, use_preprocessed_dataset=False, accuracy=False, find_peak_performance=False, debug=False, user_conf='user.conf', audit_conf='audit.config', time=None, count=None, performance_sample_count=None, max_latency=None, samples_per_query=8)",
+    "runtime": "openvino",
+    "time": 1753985808,
+    "version": "2025.2.0-19140-c01cd93e24d-releases/2025/2"
+}

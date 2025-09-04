@@ -1,0 +1,56 @@
+{
+    "TestScenario.SingleStream": {
+        "count": 19234,
+        "good_items": 0,
+        "mean": 0.03093433713570843,
+        "percentiles": {
+            "50.0": 0.03026294708251953,
+            "80.0": 0.03122568130493164,
+            "90.0": 0.03188445568084717,
+            "95.0": 0.03267515897750854,
+            "99.0": 0.04117801189422602,
+            "99.9": 0.14528706598282154
+        },
+        "qps": 30.67597663495933,
+        "took": 627.0053021907806,
+        "total_items": 19234
+    },
+    "args": {
+        "accuracy": false,
+        "audit_conf": "audit.config",
+        "backend": "onnxruntime",
+        "cache": 0,
+        "cache_dir": "/Users/hypernome/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_7699bbdc",
+        "count": null,
+        "data_format": null,
+        "dataset": "imagenet",
+        "dataset_list": "/Users/hypernome/MLC/repos/local/cache/extract-file_imagenet-aux-da_47f5fba6/val.txt",
+        "dataset_path": "/Users/hypernome/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_7699bbdc",
+        "debug": false,
+        "device": null,
+        "find_peak_performance": false,
+        "inputs": null,
+        "max_batchsize": 32,
+        "max_latency": null,
+        "model": "/Volumes/T7 Shield/MLCommon/mlperf/inference/vision/classification_and_detection/pretrained_models/onnx/resnet50_v1.onnx",
+        "model_name": "resnet50",
+        "output": "/Users/hypernome/MLC/repos/local/cache/get-mlperf-inference-results-dir_e9e0891e/valid_results/Amitashs_MBP.attlocal.net-reference-cpu-onnxruntime-v1.19.2-default_config/resnet50/singlestream/performance/run_1",
+        "outputs": [
+            "ArgMax:0"
+        ],
+        "performance_sample_count": null,
+        "preprocessed_dir": null,
+        "profile": "resnet50-onnxruntime",
+        "qps": null,
+        "samples_per_query": 8,
+        "scenario": "SingleStream",
+        "threads": 8,
+        "time": null,
+        "use_preprocessed_dataset": true,
+        "user_conf": "/Users/hypernome/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/33927c8c51b94cef82c4a044093fde2b.conf"
+    },
+    "cmdline": "Namespace(dataset='imagenet', dataset_path='/Users/hypernome/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_7699bbdc', dataset_list='/Users/hypernome/MLC/repos/local/cache/extract-file_imagenet-aux-da_47f5fba6/val.txt', data_format=None, profile='resnet50-onnxruntime', scenario='SingleStream', max_batchsize=32, model='/Volumes/T7 Shield/MLCommon/mlperf/inference/vision/classification_and_detection/pretrained_models/onnx/resnet50_v1.onnx', output='/Users/hypernome/MLC/repos/local/cache/get-mlperf-inference-results-dir_e9e0891e/valid_results/Amitashs_MBP.attlocal.net-reference-cpu-onnxruntime-v1.19.2-default_config/resnet50/singlestream/performance/run_1', inputs=None, outputs=['ArgMax:0'], backend='onnxruntime', device=None, model_name='resnet50', threads=8, qps=None, cache=0, cache_dir='/Users/hypernome/MLC/repos/local/cache/get-preprocessed-dataset-imagenet_7699bbdc', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=False, find_peak_performance=False, debug=False, user_conf='/Users/hypernome/MLC/repos/mlcommons@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/33927c8c51b94cef82c4a044093fde2b.conf', audit_conf='audit.config', time=None, count=None, performance_sample_count=None, max_latency=None, samples_per_query=8)",
+    "runtime": "onnxruntime",
+    "time": 1754301514,
+    "version": "1.19.2"
+}

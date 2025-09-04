@@ -1,0 +1,35 @@
+python3 python/main.py --profile retinanet-onnxruntime --model "/home/mlcuser/MLC/repos/local/cache/download-file_get-ml-model-mo_2d237e72/resnext50_32x4d_fpn.onnx" --dataset-path /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348 --output "/home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-results-dir_d5af2b93/valid_results/28895441291d-reference-cpu-onnxruntime-v1.22.1-default_config/retinanet/singlestream/accuracy" --scenario SingleStream --max-batchsize 1 --threads 32 --user_conf /home/mlcuser/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/aeb379e00097440c81bf6b02606bdd6f.conf --accuracy --use_preprocessed_dataset --cache_dir /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348 --dataset-list /home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348/annotations/openimages-mlperf.json
+INFO:main:Namespace(dataset='openimages-800-retinanet-onnx', dataset_path='/home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348', dataset_list='/home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348/annotations/openimages-mlperf.json', data_format=None, profile='retinanet-onnxruntime', scenario='SingleStream', max_batchsize=1, model='/home/mlcuser/MLC/repos/local/cache/download-file_get-ml-model-mo_2d237e72/resnext50_32x4d_fpn.onnx', output='/home/mlcuser/MLC/repos/local/cache/get-mlperf-inference-results-dir_d5af2b93/valid_results/28895441291d-reference-cpu-onnxruntime-v1.22.1-default_config/retinanet/singlestream/accuracy', inputs=['images'], outputs=['boxes', 'labels', 'scores'], backend='onnxruntime', device=None, model_name='retinanet', threads=32, qps=None, cache=0, cache_dir='/home/mlcuser/MLC/repos/local/cache/get-preprocessed-dataset-openimages_bc653348', preprocessed_dir=None, use_preprocessed_dataset=True, accuracy=True, find_peak_performance=False, debug=False, user_conf='/home/mlcuser/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/aeb379e00097440c81bf6b02606bdd6f.conf', audit_conf='audit.config', time=None, count=None, performance_sample_count=None, max_latency=None, samples_per_query=8)
+INFO:coco:loaded 24781 images, cache=0, already_preprocessed=True, took=0.4sec
+INFO:main:starting TestScenario.SingleStream
+loading annotations into memory...
+Done (t=0.31s)
+creating index...
+index created!
+Loading and preparing results...
+Converting ndarray to lists...
+(2936608, 7)
+0/2936608
+1000000/2936608
+2000000/2936608
+DONE (t=7.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=93.91s).
+Accumulating evaluation results...
+DONE (t=21.70s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.376
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.525
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.406
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.127
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.415
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.420
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.598
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.627
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.082
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.341
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.677
+TestScenario.SingleStream qps=182.86, mean=0.5039, time=135.521, acc=41.033%, mAP=37.572%, queries=24781, tiles=50.0:0.5059,80.0:0.5083,90.0:0.5116,95.0:0.5189,99.0:0.5393,99.9:0.6371

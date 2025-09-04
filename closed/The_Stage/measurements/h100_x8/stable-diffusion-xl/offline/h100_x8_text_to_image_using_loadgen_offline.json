@@ -1,0 +1,7 @@
+{
+    "retraining": "No",
+    "input_data_types": "fp16",
+    "weight_data_types": "fp8",
+    "starting_weights_filename": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+    "weight_transformations": "quantization, affine fusion"
+}

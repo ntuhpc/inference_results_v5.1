@@ -1,0 +1,16 @@
+--extra-index-url https://pypi.nvidia.com
+cuda-python==12.6.2
+gevent==24.11.1
+geventhttpclient==2.3.3
+grpcio==1.70.0
+# modelopt will be installed with TRTLLM
+# nvidia-modelopt[torch]
+onnx-graphsurgeon==0.5.2
+optimum==1.23.3
+polygraphy==0.49.16
+pynvml==8.0.2
+pyre-extensions==0.0.32
+torchmetrics==1.0.3
+transformers==4.48.1
+torchsnapshot==0.1.0
+tritonclient==2.52.0

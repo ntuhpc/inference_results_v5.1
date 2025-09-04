@@ -1,0 +1,9 @@
+{
+  "os_version": "macOS-15.5-arm64-arm-64bit",
+  "cpu_version": "arm",
+  "python_version": "3.11.13 (main, Jun  5 2025, 08:21:08) [Clang 14.0.6 ]",
+  "os_version_sys": "macos",
+  "system_name": "Amitashs-MBP.attlocal.net",
+  "mlc_repo_name": "mlcommons@mlperf-automations",
+  "mlc_repo_git_hash": "22db961254256552a33ffaf9e6021f35c348be1d"
+}

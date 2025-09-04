@@ -1,0 +1,17 @@
+rank 0=localhost slot=0-55
+rank 1=localhost slot=0-55
+rank 2=localhost slot=0-55
+rank 3=localhost slot=0-55
+rank 4=localhost slot=56-111
+rank 5=localhost slot=56-111
+rank 6=localhost slot=56-111
+rank 7=localhost slot=56-111
+rank 8=<remote_host> slot=0-55
+rank 9=<remote_host> slot=0-55
+rank 10=<remote_host> slot=0-55
+rank 11=<remote_host> slot=0-55
+rank 12=<remote_host> slot=56-111
+rank 13=<remote_host> slot=56-111
+rank 14=<remote_host> slot=56-111
+rank 15=<remote_host> slot=56-111
+rank 16=<remote_host> slot=0-55

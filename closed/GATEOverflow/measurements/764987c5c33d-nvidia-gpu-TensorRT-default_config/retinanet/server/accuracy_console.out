@@ -1,0 +1,101 @@
+[2025-08-01 05:17:38,215 main.py:237 INFO] Detected system ID: gateoverflow_rtx4090x2
+[2025-08-01 05:17:38,230 harness.py:241 INFO] The harness will load 2 plugins: ['build/plugins/NMSOptPlugin/libnmsoptplugin.so', 'build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so']
+[2025-08-01 05:17:38,231 generate_conf_files.py:107 INFO] Generated measurements/ entries for gateoverflow_rtx4090x2_TRT/retinanet/Server
+[2025-08-01 05:17:38,232 harness.py:323 INFO] Updated LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+[2025-08-01 05:17:38,232 harness.py:357 INFO] Using harness launch command...
+[2025-08-01 05:17:38,232 __init__.py:46 INFO] Running command: ./build/bin/harness_default --plugins="build/plugins/NMSOptPlugin/libnmsoptplugin.so,build/plugins/retinanetConcatPlugin/libretinanetconcatplugin.so" --logfile_outdir="/home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-results-dir_94a235cb/valid_results/764987c5c33d-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy" --logfile_prefix="mlperf_log_" --performance_sample_count=64 --test_mode="AccuracyOnly" --gpu_copy_streams=2 --gpu_inference_streams=2 --use_cuda_thread_per_device=true --use_deque_limit=true --gpu_batch_size=8 --map_path="data_maps/open-images-v6-mlperf/val_map.txt" --mlperf_conf_path="/home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf" --tensor_path="build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear" --use_graphs=false --user_conf_path="/home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/de354aa5b1ac4952a454fa0ebcd08903.conf" --gpu_engine_batch_size="8" --gpu_engines="./build/engines/gateoverflow_rtx4090x2/retinanet/Server/retinanet-Server-gpu-retinanet-b8-int8.lwis_k_99_MaxP.plan" --max_dlas=0 --scenario="Server" --model="retinanet" --scenario Server --model retinanet --response_postprocess openimageeffnms
+[2025-08-01 05:17:38,232 __init__.py:53 INFO] Overriding Environment
+ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libjemalloc.so.2' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+benchmark : Benchmark.Retinanet
+buffer_manager_thread_count : 0
+data_dir : /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/data
+gpu_batch_size : 8
+gpu_copy_streams : 2
+gpu_inference_streams : 2
+input_dtype : int8
+input_format : linear
+log_dir : /home/ubuntu/MLC/repos/local/cache/get-git-repo_mlperf-inferenc_2b08c1b6/repo/closed/NVIDIA/build/logs/2025.08.01-05.17.35
+map_path : data_maps/open-images-v6-mlperf/val_map.txt
+mlperf_conf_path : /home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf
+precision : int8
+preprocessed_data_dir : /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/preprocessed_data
+scenario : Scenario.Server
+server_target_qps : 1700.0
+server_target_qps_adj_factor : 0.0
+system : System(cpu=CPU(name='Intel(R) Xeon(R) w7-2495X', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, vendor='GenuineIntel', cores_per_group=24, threads_per_core=2, n_groups=1, group_type=<GroupType.Socket: 'socket'>, numa_nodes=[[Interval(start=0, end=47)]], flags={'bmi2', 'rdt_a', 'cx8', 'smap', 'ept_ad', 'aperfmperf', 'smx', 'ida', 'avx512_bf16', 'mce', 'tpr_shadow', 'adx', 'clwb', 'pku', 'cat_l2', 'sse4_1', 'smep', 'avx512_bitalg', 'avx512vbmi', 'dtes64', 'cmov', 'vpid', 'user_shstk', 'ibt', 'hwp', 'ibrs', 'rdrand', 'monitor', 'avx512ifma', 'hwp_act_window', 'dts', 'hwp_pkg_req', 'fxsr', 'pbe', 'umip', 'apic', 'pcid', 'pclmulqdq', 'art', 'tm', 'dca', 'cdp_l3', 'waitpkg', 'abm', 'ssse3', 'pae', 'rdseed', 'cpuid_fault', 'enqcmd', 'tsc', 'fsgsbase', 'amx_tile', 'avx512_vbmi2', 'hwp_epp', 'xsavec', 'lm', 'fpu', 'gfni', 'nonstop_tsc', 'cdp_l2', 'rep_good', 'avx512f', 'constant_tsc', 'xsave', 'cqm_llc', 'fsrm', 'nx', 'clflushopt', 'cqm_occup_llc', 'avx', 'dtherm', 'movdir64b', 'de', 'xsaveopt', 'flexpriority', 'pts', 'arat', 'arch_capabilities', 'cat_l3', 'sse2', 'xtpr', 'x2apic', 'sse4_2', 'avx512_fp16', 'amx_bf16', 'ssbd', 'movbe', 'avx512vl', 'xgetbv1', 'wbnoinvd', 'xtopology', 'cqm', 'arch_lbr', 'avx512_vpopcntdq', 'pat', 'avx512bw', 'vnmi', 'amx_int8', 'ibpb', 'tsc_adjust', 'avx512dq', 'mba', 'vpclmulqdq', 'intel_pt', 'fma', 'rdpid', 'pdpe1gb', 'avx2', 'ht', 'ss', 'est', 'pge', 'pdcm', 'stibp', 'mmx', 'f16c', 'ospke', 'syscall', 'vme', 'avx_vnni', 'nopl', 'xsaves', 'sep', 'intel_ppin', 'cqm_mbm_local', 'avx512_vnni', 'clflush', 'movdiri', 'ibrs_enhanced', 'acpi', 'pni', 'pse36', 'mtrr', 'cx16', 'mca', 'invpcid', 'epb', 'pconfig', 'aes', 'ept', 'pse', 'bus_lock_detect', 'lahf_lm', 'split_lock_detect', 'tsc_deadline_timer', 'la57', 'pln', 'serialize', 'msr', 'cldemote', 'sse', 'tsxldtrk', 'pebs', 'sha_ni', 'md_clear', 'flush_l1d', 'cqm_mbm_total', '3dnowprefetch', 'avx512cd', 'bmi1', 'vmx', 'sdbg', 'arch_perfmon', 'bts', 'tsc_known_freq', 'ds_cpl', 'cpuid', 'erms', 'rdtscp', 'popcnt', 'tm2', 'vaes'}, vulnerabilities={'spec store bypass': 'Mitigation; Speculative Store Bypass disabled via prctl', 'spectre v1': 'Mitigation; usercopy/swapgs barriers and __user pointer sanitization', 'spectre v2': 'Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S'}), host_memory=HostMemory(capacity=Memory(quantity=197.334716, byte_suffix=<ByteSuffix.GB: (1000, 3)>, _num_bytes=197334716000)), accelerators={<class 'nvmitten.nvidia.accelerator.GPU'>: [GPU(name='NVIDIA GeForce RTX 4090', pci_id='0x268410DE', compute_sm=ComputeSM(major=8, minor=9), vram=Memory(quantity=23.5164794921875, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25250627584), max_power_limit=450.0, is_integrated=False, gpu_index=0), GPU(name='NVIDIA GeForce RTX 4090', pci_id='0x268410DE', compute_sm=ComputeSM(major=8, minor=9), vram=Memory(quantity=23.5135498046875, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=25247481856), max_power_limit=500.0, is_integrated=False, gpu_index=1)], <class 'nvmitten.nvidia.accelerator.DLA'>: []}, extras={'id': 'gateoverflow_rtx4090x2', 'tags': {'is_ampere', 'gpu_based', 'is_ada', 'custom', 'multi_gpu'}, 'name': 'gateoverflow_rtx4090x2', 'primary_compute_sm': ComputeSM(major=8, minor=9)})
+tensor_path : build/preprocessed_data/open-images-v6-mlperf/validation/Retinanet/int8_linear
+test_mode : AccuracyOnly
+use_cuda_thread_per_device : True
+use_deque_limit : True
+use_graphs : False
+user_conf_path : /home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/de354aa5b1ac4952a454fa0ebcd08903.conf
+system_id : gateoverflow_rtx4090x2
+config_name : gateoverflow_rtx4090x2_retinanet_Server
+workload_setting : WorkloadSetting(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
+optimization_level : plugin-enabled
+num_profiles : 2
+config_ver : lwis_k_99_MaxP
+accuracy_level : 99%
+inference_server : lwis
+skip_file_checks : False
+power_limit : None
+cpu_freq : None
+gpu_engine_batch_size : 8
+&&&& RUNNING Default_Harness # ./build/bin/harness_default
+[I] mlperf.conf path: /home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/mlperf.conf
+[I] user.conf path: /home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/generate-mlperf-inference-user-conf/tmp/de354aa5b1ac4952a454fa0ebcd08903.conf
+Creating QSL.
+Finished Creating QSL.
+Setting up SUT.
+[I] [TRT] Loaded engine size: 77 MiB
+[I] Device:0.GPU: [0] ./build/engines/gateoverflow_rtx4090x2/retinanet/Server/retinanet-Server-gpu-retinanet-b8-int8.lwis_k_99_MaxP.plan has been successfully loaded.
+[I] [TRT] Loaded engine size: 77 MiB
+[W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[I] Device:1.GPU: [0] ./build/engines/gateoverflow_rtx4090x2/retinanet/Server/retinanet-Server-gpu-retinanet-b8-int8.lwis_k_99_MaxP.plan has been successfully loaded.
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +6111, now: CPU 1, GPU 6253 (MiB)
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +6111, now: CPU 2, GPU 12364 (MiB)
+[I] [TRT] Switching optimization profile from: 0 to 1. Please ensure there are no enqueued operations pending in this context prior to switching profiles
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +6111, now: CPU 2, GPU 18475 (MiB)
+[I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +1, GPU +6110, now: CPU 3, GPU 24585 (MiB)
+[I] [TRT] Switching optimization profile from: 0 to 1. Please ensure there are no enqueued operations pending in this context prior to switching profiles
+[I] Creating batcher thread: 0 EnableBatcherThreadPerDevice: false
+[I] Creating cuda thread: 0
+[I] Creating cuda thread: 1
+Finished setting up SUT.
+Starting warmup. Running for a minimum of 5 seconds.
+Finished warmup. Ran for 5.15957s.
+Starting running actual test.
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Finished running actual test.
+Device Device:0.GPU processed:
+  32 batches of size 1
+  30 batches of size 2
+  20 batches of size 3
+  13 batches of size 4
+  24 batches of size 5
+  36 batches of size 6
+  33 batches of size 7
+  1457 batches of size 8
+  Memcpy Calls: 0
+  PerSampleCudaMemcpy Calls: 12395
+  BatchedCudaMemcpy Calls: 32
+Device Device:1.GPU processed:
+  28 batches of size 1
+  26 batches of size 2
+  15 batches of size 3
+  14 batches of size 4
+  13 batches of size 5
+  20 batches of size 6
+  28 batches of size 7
+  1474 batches of size 8
+  Memcpy Calls: 0
+  PerSampleCudaMemcpy Calls: 12326
+  BatchedCudaMemcpy Calls: 28
+&&&& PASSED Default_Harness # ./build/bin/harness_default
+[2025-08-01 05:21:15,847 run_harness.py:170 INFO] Result: Accuracy run detected.
+[2025-08-01 05:21:15,847 __init__.py:46 INFO] Running command: PYTHONPATH=/home/ubuntu/MLC/repos/local/cache/get-git-repo_mlperf-inferenc_2b08c1b6/repo/closed/NVIDIA:/home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/vision/classification_and_detection/python:/home/ubuntu/MLC/repos/local/cache/get-git-repo_inference-src_08c59f8e/inference/tools/submission:/home/ubuntu/MLC/repos/gateoverflow@mlperf-automations/script/get-mlperf-inference-utils:/usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/home/ubuntu/.local/lib/python3.12/site-packages:/usr/local/lib/python3.12/dist-packages:/usr/local/lib/python3.12/dist-packages/nvfuser-0.2.23a0+6627725-py3.12-linux-x86_64.egg:/usr/local/lib/python3.12/dist-packages/lightning_thunder-0.2.0.dev0-py3.12.egg:/usr/local/lib/python3.12/dist-packages/dill-0.3.9-py3.12.egg:/usr/local/lib/python3.12/dist-packages/opt_einsum-3.4.0-py3.12.egg:/usr/local/lib/python3.12/dist-packages/lightning_utilities-0.12.0.dev0-py3.12.egg:/usr/local/lib/python3.12/dist-packages/looseversion-1.3.0-py3.12.egg:/usr/lib/python3/dist-packages python3 -S /home/ubuntu/MLC/repos/local/cache/get-git-repo_mlperf-inferenc_2b08c1b6/repo/closed/NVIDIA/build/inference/vision/classification_and_detection/tools/accuracy-openimages.py --mlperf-accuracy-file /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-results-dir_94a235cb/valid_results/764987c5c33d-nvidia_original-gpu-tensorrt-vdefault-default_config/retinanet/server/accuracy/mlperf_log_accuracy.json --openimages-dir /home/ubuntu/MLC/repos/local/cache/get-mlperf-inference-nvidia-scratch-space_b4d38010/preprocessed_data/open-images-v6-mlperf --output-file build/retinanet-results.json

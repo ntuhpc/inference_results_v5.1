@@ -1,0 +1,51 @@
+================================================
+MLPerf Results Summary
+================================================
+SUT name : QueueSUT
+Scenario : Offline
+Mode     : PerformanceOnly
+Samples per second: 2.2107
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+
+================================================
+Additional Stats
+================================================
+Min latency (ns)                : 461884340
+Max latency (ns)                : 11116836040400
+Mean latency (ns)               : 5552859430175
+50.00 percentile latency (ns)   : 5549464995906
+90.00 percentile latency (ns)   : 10004267319970
+95.00 percentile latency (ns)   : 10561626731665
+97.00 percentile latency (ns)   : 10784390276224
+99.00 percentile latency (ns)   : 11005618542197
+99.90 percentile latency (ns)   : 11106018105763
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 24576
+target_qps : 2.2426
+target_latency (ns): 0
+max_async_queries : 1
+min_duration (ms): 600000
+max_duration (ms): 0
+min_query_count : 1
+max_query_count : 0
+qsl_rng_seed : 1780908523862526354
+sample_index_rng_seed : 14771362308971278857
+schedule_rng_seed : 18209322760996052031
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 64
+
+No warnings encountered during test.
+
+No errors encountered during test.

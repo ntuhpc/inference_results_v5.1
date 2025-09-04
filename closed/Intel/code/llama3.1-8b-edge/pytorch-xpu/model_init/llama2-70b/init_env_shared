@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# export WORKLOAD_NAME="llama2-70b"
+#export MODEL_NAME="/model/Llama-2-70b-chat-hf-awq-w4g128"
+#export MODEL_NAME="/model/llama2-awq-w4g-1_lm_head"
+export MODEL_NAME="/model/llama2-gptq-w4g-1b8kv"
+export MODEL_NAME_FULL="/model/Llama-2-70b-chat-hf"
+
+export DATASET_PATH="/data/open_orca/open_orca_gpt4_tokenized_llama.sampled_24576.pkl"
+export CALIBRATION_PATH="/data/open_orca/open_orca_gpt4_tokenized_llama.calibration_1000.pkl"
+export OUTPUT_DIR=$PWD/log/llama
+export TOTAL_SAMPLE_COUNT=24576
+export EVAL_SCRIPT=$EVALUATION_DIR/evaluate-accuracy.py
+
+source init_env_base
+export MAX_MODEL_LEN=2048
+export MAX_NUM_BATCHED_TOKENS=256
+export BATCHED_PREFILL=1
