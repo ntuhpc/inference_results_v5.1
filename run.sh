@@ -12,4 +12,10 @@ cp docs/docinit.sh .
 export default_division="closed";
 export default_category="datacenter";
 
-bash docinit.sh
+echo "Running docinit.sh with environment:"
+echo "INFERENCE_RESULTS_REPO_OWNER: $INFERENCE_RESULTS_REPO_OWNER"
+echo "INFERENCE_RESULTS_REPO_NAME: $INFERENCE_RESULTS_REPO_NAME"
+echo "INFERENCE_RESULTS_REPO_BRANCH: $INFERENCE_RESULTS_REPO_BRANCH"
+echo "INFERENCE_RESULTS_VERSION: $INFERENCE_RESULTS_VERSION"
+
+bash -x docinit.sh
