@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/GATEOverflow/results/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/GATEOverflow/results/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/results/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/measurements/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/compliance/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/results/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/measurements/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/compliance/GATEOverflow_RTX4090x1-reference-cpu-onnxruntime_v1.22.1-default_config" class="button">Compliance</a>
 </div>
 </div>
 </div>

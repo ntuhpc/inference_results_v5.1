@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/GATEOverflow/results/764987c5c33d-reference-gpu-vllm-default_config/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/GATEOverflow/results/764987c5c33d-reference-gpu-vllm-default_config/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/results/764987c5c33d-reference-gpu-vllm-default_config" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/measurements/764987c5c33d-reference-gpu-vllm-default_config" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/GATEOverflow/compliance/764987c5c33d-reference-gpu-vllm-default_config" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/results/764987c5c33d-reference-gpu-vllm-default_config" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/measurements/764987c5c33d-reference-gpu-vllm-default_config" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/GATEOverflow/compliance/764987c5c33d-reference-gpu-vllm-default_config" class="button">Compliance</a>
 </div>
 </div>
 </div>

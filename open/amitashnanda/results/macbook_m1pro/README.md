@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/open/amitashnanda/results/macbook_m1pro/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/open/amitashnanda/results/macbook_m1pro/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,9 +50,9 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/amitashnanda/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/amitashnanda/results/macbook_m1pro" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/amitashnanda/measurements/macbook_m1pro" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/amitashnanda/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/amitashnanda/results/macbook_m1pro" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/amitashnanda/measurements/macbook_m1pro" class="button">Measurements</a>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <h3>Processor and Memory Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>host_processor_model_name</td><td>undefined</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr><tr><td>host_processor_core_count</td><td>10</td></tr><tr><td>host_processor_frequency</td><td>undefined</td></tr><tr><td>host_memory_capacity</td><td>undefined</td></tr><tr><td>host_memory_configuration</td><td>undefined</td></tr><tr><td>host_processor_caches</td><td>L1d cache:  , L1i cache: 131072, L2 cache: 4194304, L3 cache:  </td></tr><tr><td>host_processor_interconnect</td><td></td></tr></table></div></div>
+<tr><td>host_processor_model_name</td><td>Apple M1 Pro</td></tr><tr><td>host_processors_per_node</td><td>1</td></tr><tr><td>host_processor_core_count</td><td>10</td></tr><tr><td>host_processor_frequency</td><td>up to 3.2 GHz (P-cores)</td></tr><tr><td>host_memory_capacity</td><td>16 GB unified LPDDR5</td></tr><tr><td>host_memory_configuration</td><td>16 GB unified memory (shared by CPU / GPU / ANE)</td></tr><tr><td>host_processor_caches</td><td>L1d cache:  , L1i cache: 131072, L2 cache: 4194304, L3 cache:  </td></tr><tr><td>host_processor_interconnect</td><td>Apple SoC fabric</td></tr></table></div></div>
 </div>
 <div class="table-half table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">

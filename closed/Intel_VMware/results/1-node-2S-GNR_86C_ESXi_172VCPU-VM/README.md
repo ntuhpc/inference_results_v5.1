@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/Intel_VMware/results/1-node-2S-GNR_86C_ESXi_172VCPU-VM/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/Intel_VMware/results/1-node-2S-GNR_86C_ESXi_172VCPU-VM/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Intel_VMware/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Intel_VMware/results/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Intel_VMware/measurements/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Intel_VMware/compliance/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Intel_VMware/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Intel_VMware/results/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Intel_VMware/measurements/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Intel_VMware/compliance/1-node-2S-GNR_86C_ESXi_172VCPU-VM" class="button">Compliance</a>
 </div>
 </div>
 </div>

@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/ASUSTeK/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/ASUSTeK/measurements/ESC_A8A_MI325X_256GBx8" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/ASUSTeK/compliance/ESC_A8A_MI325X_256GBx8" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/ASUSTeK/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/ASUSTeK/results/ESC_A8A_MI325X_256GBx8" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/ASUSTeK/measurements/ESC_A8A_MI325X_256GBx8" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/ASUSTeK/compliance/ESC_A8A_MI325X_256GBx8" class="button">Compliance</a>
 </div>
 </div>
 </div>

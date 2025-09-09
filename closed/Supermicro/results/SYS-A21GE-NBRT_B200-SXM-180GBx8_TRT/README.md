@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/Supermicro_1/results/B200-SXM-180GBx8_TRT/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/Supermicro/results/SYS-A21GE-NBRT_B200-SXM-180GBx8_TRT/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -22,7 +22,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 </div>
 <div class="table table-full submittertitle">
-<h2>Supermicro_1 - SYS-A21GE-NBRT (8x B200-SXM-180GB, TensorRT)</h2>
+<h2>Supermicro - SYS-A21GE-NBRT (8x B200-SXM-180GB, TensorRT)</h2>
 </div>
 <div class="test-details-container table-half">
 <div class="test-details">
@@ -38,7 +38,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <div class="test-details">
 <div class="details-group">
 <span id="tester" class="details-cell">Submitted by:</span>
-<span id="tester_val" class="details-cell">Supermicro_1</span>
+<span id="tester_val" class="details-cell">Supermicro</span>
 </div>
 <div class="details-group">
 <span id="test_date" class="details-cell"><a href="https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc#divisions">MLPerf Inference Division:</a></span>
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Supermicro_1/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Supermicro_1/results/B200-SXM-180GBx8_TRT" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Supermicro_1/measurements/B200-SXM-180GBx8_TRT" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/Supermicro_1/compliance/B200-SXM-180GBx8_TRT" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Supermicro/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Supermicro/results/SYS-A21GE-NBRT_B200-SXM-180GBx8_TRT" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Supermicro/measurements/SYS-A21GE-NBRT_B200-SXM-180GBx8_TRT" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/Supermicro/compliance/SYS-A21GE-NBRT_B200-SXM-180GBx8_TRT" class="button">Compliance</a>
 </div>
 </div>
 </div>

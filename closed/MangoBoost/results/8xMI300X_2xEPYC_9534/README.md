@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/closed/MangoBoost/results/8xMI300X_2xEPYC_9534/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/closed/MangoBoost/results/8xMI300X_2xEPYC_9534/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,10 +50,10 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/MangoBoost/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/MangoBoost/results/8xMI300X_2xEPYC_9534" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/MangoBoost/measurements/8xMI300X_2xEPYC_9534" class="button">Measurements</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/closed/MangoBoost/compliance/8xMI300X_2xEPYC_9534" class="button">Compliance</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/MangoBoost/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/MangoBoost/results/8xMI300X_2xEPYC_9534" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/MangoBoost/measurements/8xMI300X_2xEPYC_9534" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/closed/MangoBoost/compliance/8xMI300X_2xEPYC_9534" class="button">Compliance</a>
 </div>
 </div>
 </div>
@@ -148,7 +148,7 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 <h3>Network and Interconnect Details</h3>
 <div class="table-container">
 <table class="table">
-<tr><td>host_network_card_count</td><td>8</td></tr><tr><td>host_networking</td><td>Ethernet 100Gbps</td></tr><tr><td>host_networking_topology</td><td> Single-rail leaf-spine Ethernet fabric</td></tr><tr><td>network_speed_mbit</td><td></td></tr><tr><td>nics_enabled_connected</td><td></td></tr><tr><td>nics_enabled_firmware</td><td></td></tr><tr><td>nics_enabled_os</td><td></td></tr><tr><td>number_of_type_nics_installed</td><td></td></tr></table></div></div>
+<tr><td>host_network_card_count</td><td>8</td></tr><tr><td>host_networking</td><td>N/A</td></tr><tr><td>host_networking_topology</td><td>Single-level L2</td></tr><tr><td>network_speed_mbit</td><td></td></tr><tr><td>nics_enabled_connected</td><td></td></tr><tr><td>nics_enabled_firmware</td><td></td></tr><tr><td>nics_enabled_os</td><td></td></tr><tr><td>number_of_type_nics_installed</td><td></td></tr></table></div></div>
 </div>
 <div class="table-full table-striped">
 <div class="table-wrapper"><div class="yellow-strip floater" data-speed="0.1" style="transform: translate3d(0px, 19px, 0px);">

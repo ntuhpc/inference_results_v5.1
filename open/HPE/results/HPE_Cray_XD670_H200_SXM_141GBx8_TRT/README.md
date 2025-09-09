@@ -1,4 +1,4 @@
-See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/submissions_inference_v5.1/blob/refs/heads/main/open/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/summary.html)
+See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/mlcommons/inference_results_v5.1/blob/refs/heads/main/open/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT/summary.html)
 <header class="topbar">
 <div class="topbar-container">
 <div class="logo">
@@ -50,9 +50,9 @@ See the HTML preview [here](https://htmlpreview.github.io/?https://github.com/ml
 </div>
 <div class="welcome-section-wrapper2">
 <div class="button-container">
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/HPE/code" class="button">Code</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT" class="button">Result Logs</a>
-<a href="https://github.com/mlcommons/submissions_inference_v5.1/tree/main/open/HPE/measurements/HPE_Cray_XD670_H200_SXM_141GBx8_TRT" class="button">Measurements</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/HPE/code" class="button">Code</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/HPE/results/HPE_Cray_XD670_H200_SXM_141GBx8_TRT" class="button">Result Logs</a>
+<a href="https://github.com/mlcommons/inference_results_v5.1/tree/main/open/HPE/measurements/HPE_Cray_XD670_H200_SXM_141GBx8_TRT" class="button">Measurements</a>
 </div>
 </div>
 </div>
