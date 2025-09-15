@@ -8,6 +8,7 @@ if [[ $ARCH == "aarch64" ]]; then
 else
     # MLPINF-1247 - Some partners in China are reporting DNS issues with Apt, specifically with cuda-repo. Remove the .list.
     rm -f /etc/apt/sources.list.d/cuda.list
+    sed -i -e 's/http:\/\//https:\/\//g'  /etc/apt/sources.list.d/ubuntu.sources
 fi
 
 
@@ -40,7 +41,7 @@ install_core_packages(){
 
 install_platform_specific_x86_64(){
     # Install libjemalloc2
-    echo 'deb http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse' | tee -a /etc/apt/sources.list.d/focal.list
+    echo 'deb https://archive.ubuntu.com/ubuntu focal main restricted universe multiverse' | tee -a /etc/apt/sources.list.d/focal.list
     echo 'Package: *\nPin: release a=focal\nPin-Priority: -10\n' | tee -a /etc/apt/preferences.d/focal.pref
     apt update
     apt install --no-install-recommends -t focal -y libjemalloc2 libtcmalloc-minimal4
