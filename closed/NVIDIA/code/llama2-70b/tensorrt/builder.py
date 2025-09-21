@@ -57,7 +57,9 @@ class LLAMA2QuantizerConfig(QuantizerConfig):
         self.pp_size = pp_size
         ckpt_dir_map = {Precision.FP8: 'fp8-quantized-modelopt',
                         Precision.FP4: 'fp4-quantized-modelopt',
-                        Precision.NVFP4: 'fp4-quantized-modelopt'}
+                        Precision.NVFP4: 'fp4-quantized-modelopt',
+                        Precision.INT4: 'int4-quantized-modelopt',
+                        }
         if dtype_out not in ckpt_dir_map:
             raise ValueError(f"Unsupported Precision for LLAMA2: {dtype_out.valstr}")
 
