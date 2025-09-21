@@ -187,6 +187,13 @@ class TRTLLMQuantizerOp(Operation):
             raise FileNotFoundError(f"Could not locate TRTLLM quantization script at: {script_location}")
 
         self.custom_env = None
+    
+    def get_qformat(self, dtype_out) -> str:
+        dtype = dtype_out.valstr.lower()
+        
+        if dtype == "int4":
+            return "int4_awq"
+        return dtype
 
     def get_cli_flags(self) -> List[str]:
         _d = {"tp_size": self.trtllm_loader.tp_size,
@@ -196,7 +203,7 @@ class TRTLLMQuantizerOp(Operation):
               "calib_dataset": str(self.quantizer_config.dataset_path.absolute()),
               "calib_size": self.quantizer_config.batch_size * self.quantizer_config.max_batches,
               "dtype": "float16" if self.quantizer_config.dtype_in == Precision.FP16 else "bfloat16",
-              "qformat": self.quantizer_config.dtype_out.valstr.lower()}
+              "qformat": self.get_qformat(self.quantizer_config.dtype_out)}
         _d |= self.quantizer_config.flags
 
         return [f"--{k}={v}" for k, v in _d.items() if v is not None]
